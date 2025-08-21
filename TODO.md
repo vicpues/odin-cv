@@ -39,11 +39,12 @@
 
 - [_] Optional features (put extra ideas in here)
   - [_] Download as pdf
+  - [_] Change output layout (choose between setups)
   - [_] Add photo
   - [_] Dark/light mode
-  - [_] Links to source files/github
 
 - [_] Final touches:
+  - [_] Links to source files/github
   - [_] Favicon
   - [_] Set up publish toolchain
   - [_] Deploy!
