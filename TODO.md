@@ -1,10 +1,9 @@
 # To-do list
 
 - [_] Components
-  - [_] Basic ipnut. Props:
-    - [_] HTML input type
-    - [_] Label
-    - [_] Icon
+  - [x] Basic ipnut. Props:
+    - [x] Label
+    - [x] Icon
     - [_] Validation functions? (maybe)
   - [_] Input group (wrapper, kinda like a section):
     - [_] Extendable? (true/false)
