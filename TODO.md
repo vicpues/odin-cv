@@ -11,7 +11,7 @@
     - [_] Add input/group
   - [_] Form wrapper
     - [_] Switch between edit/display with a submit button (this could be a navbar thingy)
-  - [_] Display CV
+  - [_] Display CV (`<output>` element)
 
 - [_] Fields
   - [_] General info section
