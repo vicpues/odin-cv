@@ -6,7 +6,9 @@
     - [x] Icon
     - [_] Validation functions? (maybe)
   - [_] Input group (wrapper, kinda like a section):
-    - [_] Extendable? (true/false)
+    - [_] Delete button functionality
+  - [_] FormSection
+    - [_] Add input/group
   - [_] Form wrapper
     - [_] Switch between edit/display with a submit button (this could be a navbar thingy)
   - [_] Display CV
