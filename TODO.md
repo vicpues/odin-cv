@@ -38,6 +38,9 @@
   - [_] Make that sucker responsive
 
 - [_] Optional features (put extra ideas in here)
+  - [_] Fix: make To: date input min="" equal to From: (a.k.a: make it so you can't have nonsensical dates such as 2025-2018)
+  - [_] Fix: Disable To: input unless From: has been set (so you can't have something like "(empty)- 2025")
+  - [_] Make it so empty To: date outputs something like "2023 - Current"
   - [_] Reset whole form
   - [_] Reset section? (debatable)
   - [_] Download as pdf
