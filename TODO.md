@@ -13,23 +13,24 @@
     - [_] Switch between edit/display with a submit button (this could be a navbar thingy)
   - [_] Display CV (`<output>` element)
 
-- [_] Fields
+- [x] Fields
   - [x] General info section
     - [x] Name
     - [x] Email
     - [x] Phone number
     - [x] Address/city
 
-  - [_] Educational experience (customisable)
-    - [_] School name
-    - [_] Degree/title
-    - [_] Dates
+  - [x] Educational experience (customisable)
+    - [x] School name
+    - [x] Degree/title
+    - [x] Dates
+    - [x] Relevant courses
 
-  - [_] Work experience (customisable)
-    - [_] Company name
-    - [_] Position
-    - [_] Dates
-    - [_] Responsibilities
+  - [x] Work experience (customisable)
+    - [x] Company name
+    - [x] Position
+    - [x] Dates
+    - [x] Responsibilities
 
 - [_] Styling (!!)
   - [_] Maaaaaybe create a design file in figma
