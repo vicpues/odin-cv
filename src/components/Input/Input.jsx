@@ -3,7 +3,7 @@ export default function Input({ label, icon = null, onChange, inputProps }) {
 
   return (
     <label className="input-wrapper">
-      <h4>{label}</h4>
+      <span className="input-label">{label}</span>
       {icon}
       <input onChange={onChange} {...inputProps} className="input-field" />
     </label>
