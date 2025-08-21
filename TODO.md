@@ -14,11 +14,11 @@
   - [_] Display CV (`<output>` element)
 
 - [_] Fields
-  - [_] General info section
-    - [_] Name
-    - [_] Email
-    - [_] Phone number
-    - [_] Address/city
+  - [x] General info section
+    - [x] Name
+    - [x] Email
+    - [x] Phone number
+    - [x] Address/city
 
   - [_] Educational experience (customisable)
     - [_] School name
@@ -38,6 +38,8 @@
   - [_] Make that sucker responsive
 
 - [_] Optional features (put extra ideas in here)
+  - [_] Reset whole form
+  - [_] Reset section? (debatable)
   - [_] Download as pdf
   - [_] Change output layout (choose between setups)
   - [_] Add photo
