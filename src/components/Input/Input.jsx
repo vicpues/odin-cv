@@ -15,7 +15,7 @@ export default function Input({
       {icon}
       <input
         type={type}
-        value={value}
+        defaultValue={value}
         placeholder={placeholder}
         onChange={onChange}
         {...inputProps}
