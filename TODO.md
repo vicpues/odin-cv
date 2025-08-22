@@ -4,14 +4,17 @@
   - [x] Basic ipnut. Props:
     - [x] Label
     - [x] Icon
-    - [_] Validation functions? (maybe)
-  - [_] Input group (wrapper, kinda like a section):
-    - [_] Delete button functionality
-  - [_] FormSection
-    - [_] Add input/group
   - [_] Form wrapper
     - [_] Switch between edit/display with a submit button (this could be a navbar thingy)
   - [_] Display CV (`<output>` element)
+
+- [_] Functionality
+  - [_] Move group templates to own file in each section
+  - [_] Update data module to include _only_ default example data
+  - [_] Abstract To/From inputs to own component (for linked validation and reusability)
+  - [_] Actually implement state (maybe by bubbling it up with multiple setState functions)
+  - [_] Delete group button
+  - [_] Add input/group button
 
 - [x] Fields
   - [x] General info section
