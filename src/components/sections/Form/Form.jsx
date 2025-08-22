@@ -1,7 +1,9 @@
-export default function Form({ children }) {
+import PersonalSection from "./PersonalSection/PersonalSection";
+
+export default function Form() {
   return (
     <form id="cv-form" action="">
-      {children}
+      <PersonalSection />
     </form>
   );
 }
