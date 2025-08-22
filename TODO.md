@@ -10,7 +10,7 @@
 
 - [_] Functionality
   - [_] Move group templates to own file in each section
-  - [_] Update data module to include _only_ default example data
+  - [x] Update data module to include _only_ default example data
   - [_] Abstract To/From inputs to own component (for linked validation and reusability)
   - [_] Actually implement state (maybe by bubbling it up with multiple setState functions)
   - [_] Delete group button
