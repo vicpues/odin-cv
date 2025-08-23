@@ -1,24 +1,24 @@
-import Input from "../Input/Input";
-import InputGroup from "../InputGroup/InputGroup";
-import FormSection from "../FormSection/FormSection";
+import FormSection from "./FormSection/FormSection";
+import Input from "./Input/Input";
+import InputGroup from "./InputGroup/InputGroup";
 
-export default function EducationSection() {
+export default function WorkSection() {
   const CURRENT_YEAR = new Date().getFullYear();
 
   return (
-    <FormSection id="education-details" legend="Education">
+    <FormSection id="work-details" legend="Work experience">
       <InputGroup>
         <Input
-          label="School name"
+          label="Company name"
           type="text"
-          placeholder="ex. 'Monsters University (MU)'"
+          placeholder="ex. 'Monsters Inc.'"
           inputProps={{ autoCapitalize: "words" }}
         />
 
         <Input
-          label="Degree name"
+          label="Job title"
           type="text"
-          placeholder="ex. 'BA in Scares'"
+          placeholder="ex. 'Scare floor supervisor'"
           inputProps={{ autoCapitalize: "words" }}
         />
 
@@ -35,9 +35,11 @@ export default function EducationSection() {
         />
 
         <Input
-          label="Relevant courses"
+          label="Responsibilities"
           type="text"
-          placeholder={"example:\n-Scares 101\n-Advanced sneaking"}
+          placeholder={
+            "example:\n-Coordinating scare teams\n-Creating performance reports"
+          }
           inputProps={{ autoCapitalize: "sentence" }}
         />
       </InputGroup>

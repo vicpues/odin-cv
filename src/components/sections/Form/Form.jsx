@@ -1,6 +1,6 @@
-import PersonalSection from "./PersonalSection/PersonalSection";
-import EducationSection from "./EducationSection/EducationSection";
-import WorkSection from "./WorkSection/WorkSection";
+import PersonalSection from "./PersonalSection";
+import EducationSection from "./EducationSection";
+import WorkSection from "./WorkSection";
 
 export default function Form() {
   return (

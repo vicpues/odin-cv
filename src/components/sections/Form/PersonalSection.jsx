@@ -1,5 +1,5 @@
-import FormSection from "../FormSection/FormSection";
-import Input from "../Input/Input";
+import FormSection from "./FormSection/FormSection";
+import Input from "./Input/Input";
 
 export default function PersonalSection() {
   return (
