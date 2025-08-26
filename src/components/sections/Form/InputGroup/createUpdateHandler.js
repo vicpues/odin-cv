@@ -1,11 +1,11 @@
 import getFormData from "./getFormData";
 
-export default function createUpdateHandler(
+export default function createUpdateHandler({
     data,
     groupName,
     groupId,
     updateFn,
-) {
+}) {
     return (e) => {
         e.preventDefault();
 
