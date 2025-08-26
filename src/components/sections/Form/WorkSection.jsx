@@ -1,7 +1,7 @@
 import Input from "./Input/Input";
 import InputGroup from "./InputGroup/InputGroup";
 import FormSection from "./FormSection/FormSection";
-import getFormData from "./InputGroup/getFormData";
+import createUpdateHandler from "./InputGroup/createUpdateHandler";
 
 export default function WorkSection({ data, updateData }) {
   return (
@@ -10,18 +10,12 @@ export default function WorkSection({ data, updateData }) {
         <GroupTemplate
           key={groupData.uniqueId}
           groupData={groupData}
-          onUpdate={(e) => {
-            e.preventDefault();
-            const index = data.workData.findIndex(
-              (group) => group.uniqueId === groupData.uniqueId,
-            );
-            const newData = [...data.workData];
-            newData[index] = {
-              ...getFormData(e.target),
-              uniqueId: groupData.uniqueId,
-            };
-            updateData({ ...data, workData: newData });
-          }}
+          onUpdate={createUpdateHandler(
+            data,
+            "workData",
+            groupData.uniqueId,
+            updateData,
+          )}
         />
       ))}
     </FormSection>

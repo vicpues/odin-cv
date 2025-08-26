@@ -1,7 +1,7 @@
 import Input from "./Input/Input";
 import InputGroup from "./InputGroup/InputGroup";
 import FormSection from "./FormSection/FormSection";
-import getFormData from "./InputGroup/getFormData";
+import createUpdateHandler from "./InputGroup/createUpdateHandler";
 
 export default function EducationSection({ data, updateData }) {
   return (
@@ -10,18 +10,12 @@ export default function EducationSection({ data, updateData }) {
         <GroupTemplate
           key={groupData.uniqueId}
           groupData={groupData}
-          onUpdate={(e) => {
-            e.preventDefault();
-            const index = data.educationData.findIndex(
-              (group) => group.uniqueId === groupData.uniqueId,
-            );
-            const newData = [...data.educationData];
-            newData[index] = {
-              ...getFormData(e.target),
-              uniqueId: groupData.uniqueId,
-            };
-            updateData({ ...data, educationData: newData });
-          }}
+          onUpdate={createUpdateHandler(
+            data,
+            "educationData",
+            groupData.uniqueId,
+            updateData,
+          )}
         />
       ))}
     </FormSection>
