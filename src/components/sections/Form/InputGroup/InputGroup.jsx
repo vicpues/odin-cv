@@ -1,6 +1,9 @@
-export default function InputGroup({ children, onDelete = null }) {
+export default function InputGroup({ children, onUpdate, onDelete = null }) {
   return (
-    <form className={"input-group" + (onDelete ? " extensible" : "")}>
+    <form
+      onSubmit={onUpdate}
+      className={"input-group" + (onDelete ? " extensible" : "")}
+    >
       {onDelete && (
         <button className="delete-group" onClick={onDelete} type="button">
           X

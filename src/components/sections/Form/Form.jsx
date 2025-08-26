@@ -2,12 +2,12 @@ import PersonalSection from "./PersonalSection";
 import EducationSection from "./EducationSection";
 import WorkSection from "./WorkSection";
 
-export default function Form({ data }) {
+export default function Form({ data, onUpdate }) {
   return (
     <div id="cv-form">
-      <PersonalSection data={data} />
-      <EducationSection data={data} />
-      <WorkSection data={data} />
+      <PersonalSection data={data} updateData={onUpdate} />
+      <EducationSection data={data} updateData={onUpdate} />
+      <WorkSection data={data} updateData={onUpdate} />
     </div>
   );
 }

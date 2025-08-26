@@ -7,7 +7,6 @@ export default function Input({
   placeholder = "",
   defaultValue = "",
   icon = null,
-  onChange,
   inputProps,
 }) {
   if (icon !== null) icon.className = "input-icon";
@@ -16,7 +15,6 @@ export default function Input({
     type,
     defaultValue,
     placeholder,
-    onChange,
     ...inputProps,
   };
 
@@ -34,7 +32,9 @@ export default function Input({
 }
 
 function InputElement(props) {
-  return <input {...props} className={INPUT_CLASSNAME} />;
+  return (
+    <input {...props} className={INPUT_CLASSNAME} onChange={handleChange} />
+  );
 }
 
 function TextareaElement(props) {
@@ -43,6 +43,11 @@ function TextareaElement(props) {
       {...props}
       className={INPUT_CLASSNAME}
       style={{ resize: "none" }}
+      onChange={handleChange}
     ></textarea>
   );
+}
+
+function handleChange(e) {
+  e.target.form.requestSubmit();
 }

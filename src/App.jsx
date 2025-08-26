@@ -1,10 +1,18 @@
 import "./App.css";
+import { useState } from "react";
 import Form from "./components/sections/Form/Form";
+import { data } from "./form-data";
 
 export default function App() {
+  const [formData, setFormData] = useState(data);
+
+  function updateData(newData) {
+    setFormData(newData);
+  }
+
   return (
     <>
-      <Form />
+      <Form data={formData} onUpdate={updateData} />
     </>
   );
 }
