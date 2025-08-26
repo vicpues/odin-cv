@@ -28,3 +28,19 @@ export const data = {
         },
     ],
 };
+
+export const educationTemplate = {
+    school: "",
+    degree: "",
+    from: "",
+    to: "",
+    details: "",
+};
+
+export const workTemplate = {
+    company: "",
+    position: "",
+    from: "",
+    to: "",
+    details: "",
+};
