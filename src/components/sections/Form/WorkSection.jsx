@@ -36,7 +36,7 @@ export default function WorkSection({ data }) {
 
         <Input
           label="Responsibilities"
-          type="text"
+          type="textarea"
           placeholder={
             "example:\n-Coordinating scare teams\n-Creating performance reports"
           }

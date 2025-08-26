@@ -36,7 +36,7 @@ export default function EducationSection({ data }) {
 
         <Input
           label="Relevant courses"
-          type="text"
+          type="textarea"
           placeholder={"example:\n-Scares 101\n-Advanced sneaking"}
           inputProps={{ autoCapitalize: "sentence" }}
         />
