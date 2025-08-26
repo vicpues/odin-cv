@@ -11,7 +11,7 @@ export default function PersonalSection({ data }) {
           name="name"
           type="text"
           placeholder="ex. 'John Doe'"
-          inputProps={{ autoCapitalize: "words" }}
+          inputProps={{ autoCapitalize: "words", autoComplete: "name" }}
         />
 
         <Input
@@ -19,6 +19,7 @@ export default function PersonalSection({ data }) {
           name="email"
           type="text"
           placeholder="ex. 'email@example.com"
+          inputProps={{ autoComplete: "email" }}
         />
 
         <Input
@@ -26,7 +27,7 @@ export default function PersonalSection({ data }) {
           name="phone"
           type="tel"
           placeholder="ex. '+44 444 444 44'"
-          inputProps={{ maxLength: 20 }}
+          inputProps={{ maxLength: 20, autoComplete: "tel" }}
         />
 
         <Input

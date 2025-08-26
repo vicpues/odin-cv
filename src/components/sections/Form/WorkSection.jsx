@@ -13,7 +13,7 @@ export default function WorkSection({ data }) {
           name="company"
           type="text"
           placeholder="ex. 'Monsters Inc.'"
-          inputProps={{ autoCapitalize: "words" }}
+          inputProps={{ autoCapitalize: "words", autoComplete: "off" }}
         />
 
         <Input
