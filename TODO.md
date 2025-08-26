@@ -9,12 +9,13 @@
   - [_] Display CV (`<output>` element)
 
 - [_] Functionality
-  - [_] Move group templates to own file in each section
   - [x] Update data module to include _only_ default example data
   - [_] Abstract To/From inputs to own component (for linked validation and reusability)
-  - [_] Actually implement state (maybe by bubbling it up with multiple setState functions)
+  - [x] Actually implement state (maybe by bubbling it up with multiple setState functions)
   - [_] Delete group button
   - [_] Add input/group button
+    - [_] Use templates in each section
+    - [_] Prevent collisions by regenerating ID if it already exists in group
 
 - [x] Fields
   - [x] General info section
@@ -42,6 +43,7 @@
   - [_] Make that sucker responsive
 
 - [_] Optional features (put extra ideas in here)
+  - [_] Lazy load sections of the page and add loading icon
   - [_] Drag n' drop to change the order of Input Groups
   - [_] Fix: make To: date input min="" equal to From: (a.k.a: make it so you can't have nonsensical dates such as 2025-2018)
   - [_] Fix: Disable To: input unless From: has been set (so you can't have something like "(empty)- 2025")
