@@ -2,12 +2,12 @@ import Input from "./Input/Input";
 import InputGroup from "./InputGroup/InputGroup";
 import FormSection from "./FormSection/FormSection";
 
-export default function EducationSection() {
+export default function EducationSection({ data }) {
   const CURRENT_YEAR = new Date().getFullYear();
 
   return (
-    <FormSection id="education-details" legend="Education">
-      <InputGroup>
+    <FormSection id="education-details" title="Education">
+      <InputGroup data={data}>
         <Input
           label="School name"
           type="text"

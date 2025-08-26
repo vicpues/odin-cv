@@ -2,12 +2,12 @@ import PersonalSection from "./PersonalSection";
 import EducationSection from "./EducationSection";
 import WorkSection from "./WorkSection";
 
-export default function Form() {
+export default function Form({ data }) {
   return (
-    <form id="cv-form" action="">
-      <PersonalSection />
-      <EducationSection />
-      <WorkSection />
-    </form>
+    <div id="cv-form">
+      <PersonalSection data={data} />
+      <EducationSection data={data} />
+      <WorkSection data={data} />
+    </div>
   );
 }

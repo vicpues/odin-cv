@@ -1,13 +1,13 @@
-export default function FormSection({ legend, children, onAdd = null }) {
+export default function FormSection({ title, children, onAdd = null }) {
   return (
-    <fieldset className="form-section">
-      <legend className="form-section-title">{legend}</legend>
+    <div className="form-section">
+      <div className="form-section-title">{title}</div>
       {children}
       {onAdd && (
         <button onClick={onAdd} type="button">
           Add +
         </button>
       )}
-    </fieldset>
+    </div>
   );
 }
