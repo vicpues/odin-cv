@@ -1,9 +1,11 @@
-export default function InputGroup({ onDelete, children }) {
+export default function InputGroup({ children, onDelete = null }) {
   return (
-    <div className="input-group">
-      <button className="delete-group" onClick={onDelete} type="button">
-        X
-      </button>
+    <div className={"input-group" + (onDelete ? " extensible" : "")}>
+      {onDelete && (
+        <button className="delete-group" onClick={onDelete} type="button">
+          X
+        </button>
+      )}
       {children}
     </div>
   );
