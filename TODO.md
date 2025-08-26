@@ -12,7 +12,7 @@
   - [x] Update data module to include _only_ default example data
   - [_] Abstract To/From inputs to own component (for linked validation and reusability)
   - [x] Actually implement state (maybe by bubbling it up with multiple setState functions)
-  - [_] Delete group button
+  - [x] Delete group button
   - [_] Add input/group button
     - [_] Use templates in each section
     - [_] Prevent collisions by regenerating ID if it already exists in group

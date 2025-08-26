@@ -2,30 +2,35 @@ import Input from "./Input/Input";
 import InputGroup from "./InputGroup/InputGroup";
 import FormSection from "./FormSection/FormSection";
 import createUpdateHandler from "./InputGroup/createUpdateHandler";
+import createDeleteHandler from "./InputGroup/createDeleteHandler";
 
 export default function EducationSection({ data, updateData }) {
   return (
     <FormSection title="Education">
-      {data.educationData.map((groupData) => (
-        <GroupTemplate
-          key={groupData.uniqueId}
-          groupData={groupData}
-          onUpdate={createUpdateHandler(
-            data,
-            "educationData",
-            groupData.uniqueId,
-            updateData,
-          )}
-        />
-      ))}
+      {data.educationData.map((groupData) => {
+        const handlerArgs = {
+          data: data,
+          groupName: "educationData",
+          groupId: groupData.uniqueId,
+          updateFn: updateData,
+        };
+        return (
+          <GroupTemplate
+            key={groupData.uniqueId}
+            groupData={groupData}
+            onUpdate={createUpdateHandler(handlerArgs)}
+            onDelete={createDeleteHandler(handlerArgs)}
+          />
+        );
+      })}
     </FormSection>
   );
 }
 
-function GroupTemplate({ groupData, onUpdate }) {
+function GroupTemplate({ groupData, onUpdate, onDelete }) {
   const CURRENT_YEAR = new Date().getFullYear();
   return (
-    <InputGroup onUpdate={onUpdate}>
+    <InputGroup onUpdate={onUpdate} onDelete={onDelete}>
       <Input
         label="School name"
         name="school"

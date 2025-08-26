@@ -2,30 +2,35 @@ import Input from "./Input/Input";
 import InputGroup from "./InputGroup/InputGroup";
 import FormSection from "./FormSection/FormSection";
 import createUpdateHandler from "./InputGroup/createUpdateHandler";
+import createDeleteHandler from "./InputGroup/createDeleteHandler";
 
 export default function WorkSection({ data, updateData }) {
   return (
     <FormSection id="work-details" title="Work experience">
-      {data.workData.map((groupData) => (
-        <GroupTemplate
-          key={groupData.uniqueId}
-          groupData={groupData}
-          onUpdate={createUpdateHandler(
-            data,
-            "workData",
-            groupData.uniqueId,
-            updateData,
-          )}
-        />
-      ))}
+      {data.workData.map((groupData) => {
+        const handlerArgs = {
+          data: data,
+          groupName: "workData",
+          groupId: groupData.uniqueId,
+          updateFn: updateData,
+        };
+        return (
+          <GroupTemplate
+            key={groupData.uniqueId}
+            groupData={groupData}
+            onUpdate={createUpdateHandler(handlerArgs)}
+            onDelete={createDeleteHandler(handlerArgs)}
+          />
+        );
+      })}
     </FormSection>
   );
 }
 
-function GroupTemplate({ groupData, onUpdate }) {
+function GroupTemplate({ groupData, onUpdate, onDelete }) {
   const CURRENT_YEAR = new Date().getFullYear();
   return (
-    <InputGroup onUpdate={onUpdate}>
+    <InputGroup onUpdate={onUpdate} onDelete={onDelete}>
       <Input
         label="Company name"
         name="company"
