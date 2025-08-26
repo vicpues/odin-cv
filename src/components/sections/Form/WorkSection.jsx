@@ -10,6 +10,7 @@ export default function WorkSection({ data }) {
       <InputGroup data={data}>
         <Input
           label="Company name"
+          name="company"
           type="text"
           placeholder="ex. 'Monsters Inc.'"
           inputProps={{ autoCapitalize: "words" }}
@@ -17,6 +18,7 @@ export default function WorkSection({ data }) {
 
         <Input
           label="Job title"
+          name="position"
           type="text"
           placeholder="ex. 'Scare floor supervisor'"
           inputProps={{ autoCapitalize: "words" }}
@@ -24,18 +26,21 @@ export default function WorkSection({ data }) {
 
         <Input
           label="From:"
+          name="from"
           type="number"
           inputProps={{ min: 1900, max: CURRENT_YEAR }}
         />
 
         <Input
           label="To:"
+          name="to"
           type="number"
           inputProps={{ min: 1900, max: CURRENT_YEAR }}
         />
 
         <Input
           label="Responsibilities"
+          name="details"
           type="textarea"
           placeholder={
             "example:\n-Coordinating scare teams\n-Creating performance reports"

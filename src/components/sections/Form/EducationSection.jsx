@@ -10,6 +10,7 @@ export default function EducationSection({ data }) {
       <InputGroup data={data}>
         <Input
           label="School name"
+          name="school"
           type="text"
           placeholder="ex. 'Monsters University (MU)'"
           inputProps={{ autoCapitalize: "words" }}
@@ -17,6 +18,7 @@ export default function EducationSection({ data }) {
 
         <Input
           label="Degree name"
+          name="degree"
           type="text"
           placeholder="ex. 'BA in Scares'"
           inputProps={{ autoCapitalize: "words" }}
@@ -24,18 +26,21 @@ export default function EducationSection({ data }) {
 
         <Input
           label="From:"
+          name="from"
           type="number"
           inputProps={{ min: 1900, max: CURRENT_YEAR }}
         />
 
         <Input
           label="To:"
+          name="to"
           type="number"
           inputProps={{ min: 1900, max: CURRENT_YEAR }}
         />
 
         <Input
           label="Relevant courses"
+          name="details"
           type="textarea"
           placeholder={"example:\n-Scares 101\n-Advanced sneaking"}
           inputProps={{ autoCapitalize: "sentence" }}

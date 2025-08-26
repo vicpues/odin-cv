@@ -8,19 +8,30 @@ export default function PersonalSection({ data }) {
       <InputGroup data={data}>
         <Input
           label="Name"
+          name="name"
           type="text"
           placeholder="ex. 'John Doe'"
           inputProps={{ autoCapitalize: "words" }}
         />
-        <Input label="Email" type="text" placeholder="ex. 'email@example.com" />
+
+        <Input
+          label="Email"
+          name="email"
+          type="text"
+          placeholder="ex. 'email@example.com"
+        />
+
         <Input
           label="Phone number"
+          name="phone"
           type="tel"
           placeholder="ex. '+44 444 444 44'"
           inputProps={{ maxLength: 20 }}
         />
+
         <Input
           label="Location"
+          name="location"
           type="text"
           placeholder="ex. 'Boring, Oregon'"
           inputProps={{ autoCapitalize: "words" }}
