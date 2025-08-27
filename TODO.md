@@ -48,7 +48,7 @@
   - [x] Fix: make To: date input min="" equal to From: (a.k.a: make it so you can't have nonsensical dates such as 2025-2018)
   - [x] Fix: Disable To: input unless From: has been set (so you can't have something like "(empty)- 2025")
   - [x] Fix: When first interacting with "From", insert the current year instead of 1900
-  - [_] Fix: Update To: when From: is set to a smaller value
+  - [x] Fix: Update To: when From: is set to a smaller value
   - [_] Make it so, when To: and From: are the same, they output "2023" instead of "2023 - 2023"
   - [_] Make it so empty To: date outputs something like "2023 - Current"
   - [_] Save latest version in localStorage and load data if it exists

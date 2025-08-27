@@ -40,12 +40,24 @@ export default function ToFromInputs({ to, from }) {
 
   function validateInputs(e) {
     const fromElement = getFromElement(e);
+    const fromValue = new Number(fromElement.value);
+    const toElement = getToElement(e);
+    const toValue = new Number(toElement.value);
+
+    // Start at current year when interacting with an empty From:
     if (from === "") fromElement.value = CURRENT_YEAR;
+
+    // Update To: if it's not empty and From: becomes greater than it
+    if (toElement.value && toValue < fromValue) toElement.value = fromValue;
   }
 }
 
 function getFromElement(e) {
   return getForm(e).querySelector(`input[name="from"]`);
+}
+
+function getToElement(e) {
+  return getForm(e).querySelector(`input[name="to"]`);
 }
 
 function getForm(e) {
