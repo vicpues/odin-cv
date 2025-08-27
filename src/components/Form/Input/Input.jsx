@@ -1,3 +1,5 @@
+import handleChange from "./handleChange";
+
 const INPUT_CLASSNAME = "input-field";
 
 export default function Input({
@@ -46,8 +48,4 @@ function TextareaElement(props) {
       onChange={handleChange}
     ></textarea>
   );
-}
-
-function handleChange(e) {
-  e.target.form.requestSubmit();
 }
