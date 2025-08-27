@@ -1,5 +1,5 @@
-import createUpdateHandler from "../InputGroup/createUpdateHandler";
-import createDeleteHandler from "../InputGroup/createDeleteHandler";
+import createUpdateHandler from "./createUpdateHandler";
+import createDeleteHandler from "./createDeleteHandler";
 
 export default function FormSection({
   // eslint-disable-next-line no-unused-vars
