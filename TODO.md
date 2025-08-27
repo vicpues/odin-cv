@@ -1,14 +1,12 @@
 # To-do list
 
-- [_] Components
+- [x] Components
   - [x] Basic ipnut. Props:
     - [x] Label
     - [x] Icon
-  - [_] Form wrapper
-    - [_] Switch between edit/display with a submit button (this could be a navbar thingy)
-  - [_] Display CV (`<output>` element)
+  - [x] Display CV (`<output>` element)
 
-- [_] Functionality
+- [x] Functionality
   - [x] Update data module to include _only_ default example data
   - [x] Abstract To/From inputs to own component (for linked validation and reusability)
   - [x] Actually implement state (maybe by bubbling it up with multiple setState functions)
@@ -36,6 +34,8 @@
     - [x] Dates
     - [x] Responsibilities
 
+- [_] Go over aaaall the jsx and make sure it's semantic
+
 - [_] Styling (!!)
   - [_] Maaaaaybe create a design file in figma
   - [_] General layout (mobile first!)
@@ -43,23 +43,23 @@
   - [_] Make that sucker responsive
 
 - [_] Optional features (put extra ideas in here)
-  - [_] Lazy load sections of the page and add loading icon
   - [_] Drag n' drop to change the order of Input Groups
   - [x] Fix: make To: date input min="" equal to From: (a.k.a: make it so you can't have nonsensical dates such as 2025-2018)
   - [x] Fix: Disable To: input unless From: has been set (so you can't have something like "(empty)- 2025")
   - [x] Fix: When first interacting with "From", insert the current year instead of 1900
   - [x] Fix: Update To: when From: is set to a smaller value
-  - [_] Make it so, when To: and From: are the same, they output "2023" instead of "2023 - 2023"
-  - [_] Make it so empty To: date outputs something like "2023 - Current"
-  - [_] Save any résumé to localStorage with a name
-  - [_] Save latest version in localStorage anonymously if not named, and load it if it exists
-  - [_] Localization json file (language). Use user default, or last selected from localStorage
+  - [x] Make it so, when To: and From: are the same, they output "2023" instead of "2023 - 2023"
+  - [x] Make it so empty To: date outputs something like "2023 - Current"
   - [_] Reset whole form
   - [_] Reset section? (debatable)
   - [_] Download as pdf
   - [_] Change output layout (choose between setups)
   - [_] Add photo
   - [_] Dark/light mode
+  - [_] Lazy load sections of the page and add loading icon (only if loading times become an issue)
+  - [_] Save any résumé to localStorage with a name
+  - [_] Save latest version in localStorage anonymously if not named, and load it if it exists
+  - [_] Localization json file (language). Use user default, or last selected from localStorage
 
 - [_] Final touches:
   - [_] Give app a catchy name
