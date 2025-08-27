@@ -12,8 +12,8 @@ export default function FormSection({
   extensionTemplate = null,
 }) {
   return (
-    <div className="form-section">
-      <div className="form-section-title">{title}</div>
+    <div>
+      <div>{title}</div>
 
       {data[groupName].map((groupData) => {
         const handlerArgs = {

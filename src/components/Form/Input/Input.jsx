@@ -1,7 +1,5 @@
 import handleChange from "./handleChange";
 
-const INPUT_CLASSNAME = "input-field";
-
 export default function Input({
   label,
   name,
@@ -21,8 +19,8 @@ export default function Input({
   };
 
   return (
-    <label className="input-wrapper">
-      <span className="input-label">{label}</span>
+    <label>
+      <span>{label}</span>
       {icon}
       {type === "textarea" ? (
         <TextareaElement {...fieldProps} />
@@ -34,20 +32,13 @@ export default function Input({
 }
 
 function InputElement(props) {
-  return (
-    <input
-      {...props}
-      className={INPUT_CLASSNAME}
-      onChange={props.onChange || handleChange}
-    />
-  );
+  return <input {...props} onChange={props.onChange || handleChange} />;
 }
 
 function TextareaElement(props) {
   return (
     <textarea
       {...props}
-      className={INPUT_CLASSNAME}
       style={{ resize: "none" }}
       onChange={handleChange}
     ></textarea>
