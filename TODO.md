@@ -13,9 +13,9 @@
   - [_] Abstract To/From inputs to own component (for linked validation and reusability)
   - [x] Actually implement state (maybe by bubbling it up with multiple setState functions)
   - [x] Delete group button
-  - [_] Add input/group button
+  - [x] Add input/group button
     - [x] Use templates in each section
-    - [_] Prevent collisions by regenerating ID if it already exists in group
+    - [x] Prevent collisions by regenerating ID if it already exists in group
 
 - [x] Fields
   - [x] General info section
