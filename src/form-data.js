@@ -6,6 +6,7 @@ export const data = {
             email: "mike.wazowski@example.com",
             phone: "+44 444 444 44",
             location: "Scareville, Monsterland",
+            about: "An inspired, team-focused worker who doesn't lose his cool when things get tough.\nMy career goal is to appear in a commercial!",
         },
     ],
 

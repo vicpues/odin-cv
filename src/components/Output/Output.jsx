@@ -12,6 +12,9 @@ export default function Output({ data }) {
         <div>{personal.name}</div>
         <span>{personal.email}</span> <span>{personal.phone}</span>{" "}
         <span>{personal.location}</span>
+        <div>
+          <Paragraphs string={personal.about} />
+        </div>
       </div>
 
       {education.length > 0 && (

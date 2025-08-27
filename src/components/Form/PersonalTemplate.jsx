@@ -39,6 +39,17 @@ export default function PersonalTemplate({ groupData, onUpdate }) {
         defaultValue={groupData.location}
         inputProps={{ autoCapitalize: "words" }}
       />
+
+      <Input
+        label="About me"
+        name="about"
+        type="textarea"
+        placeholder={
+          "example:\n'An inspired, team-focused worker who doesn't lose his cool when things get tough.\nMy career goal is to appear in a commercial!'"
+        }
+        defaultValue={groupData.about}
+        inputProps={{ autoCapitalize: "sentence" }}
+      />
     </InputGroup>
   );
 }
