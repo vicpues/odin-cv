@@ -51,7 +51,9 @@
   - [x] Fix: Update To: when From: is set to a smaller value
   - [_] Make it so, when To: and From: are the same, they output "2023" instead of "2023 - 2023"
   - [_] Make it so empty To: date outputs something like "2023 - Current"
-  - [_] Save latest version in localStorage and load data if it exists
+  - [_] Save any résumé to localStorage with a name
+  - [_] Save latest version in localStorage anonymously if not named, and load it if it exists
+  - [_] Localization json file (language). Use user default, or last selected from localStorage
   - [_] Reset whole form
   - [_] Reset section? (debatable)
   - [_] Download as pdf
