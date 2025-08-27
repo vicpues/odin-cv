@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import Form from "./components/Form/Form";
+import Output from "./components/Output/Output";
 import { data } from "./form-data";
 
 export default function App() {
@@ -13,6 +14,8 @@ export default function App() {
   return (
     <>
       <Form data={formData} updateFn={updateFn} />
+      <hr style={{ margin: "2rem 0" }} />
+      <Output data={formData} />
     </>
   );
 }
