@@ -1,4 +1,5 @@
 import Input from "./Input/Input";
+import ToFromInputs from "./ToFromInputs/ToFromInputs";
 import InputGroup from "./InputGroup/InputGroup";
 
 export default function GroupTemplate({ groupData, onUpdate, onDelete }) {
@@ -23,21 +24,7 @@ export default function GroupTemplate({ groupData, onUpdate, onDelete }) {
         inputProps={{ autoCapitalize: "words" }}
       />
 
-      <Input
-        label="From:"
-        name="from"
-        type="number"
-        defaultValue={groupData.from}
-        inputProps={{ min: 1900, max: CURRENT_YEAR }}
-      />
-
-      <Input
-        label="To:"
-        name="to"
-        type="number"
-        defaultValue={groupData.to}
-        inputProps={{ min: 1900, max: CURRENT_YEAR }}
-      />
+      <ToFromInputs {...groupData} />
 
       <Input
         label="Responsibilities"

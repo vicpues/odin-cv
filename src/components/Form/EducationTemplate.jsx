@@ -1,8 +1,8 @@
 import Input from "./Input/Input";
+import ToFromInputs from "./ToFromInputs/ToFromInputs";
 import InputGroup from "./InputGroup/InputGroup";
 
 export default function EducationTemplate({ groupData, onUpdate, onDelete }) {
-  const CURRENT_YEAR = new Date().getFullYear();
   return (
     <InputGroup onUpdate={onUpdate} onDelete={onDelete}>
       <Input
@@ -23,21 +23,7 @@ export default function EducationTemplate({ groupData, onUpdate, onDelete }) {
         inputProps={{ autoCapitalize: "words" }}
       />
 
-      <Input
-        label="From:"
-        name="from"
-        type="number"
-        defaultValue={groupData.from}
-        inputProps={{ min: 1900, max: CURRENT_YEAR }}
-      />
-
-      <Input
-        label="To:"
-        name="to"
-        type="number"
-        defaultValue={groupData.to}
-        inputProps={{ min: 1900, max: CURRENT_YEAR }}
-      />
+      <ToFromInputs {...groupData} />
 
       <Input
         label="Relevant courses"
