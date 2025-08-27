@@ -62,6 +62,7 @@
   - [_] Dark/light mode
 
 - [_] Final touches:
+  - [_] Give app a catchy name
   - [_] Links to source files/github
   - [_] Favicon
   - [_] Set up publish toolchain
