@@ -35,7 +35,11 @@ export default function Input({
 
 function InputElement(props) {
   return (
-    <input {...props} className={INPUT_CLASSNAME} onChange={handleChange} />
+    <input
+      {...props}
+      className={INPUT_CLASSNAME}
+      onChange={props.onChange || handleChange}
+    />
   );
 }
 
