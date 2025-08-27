@@ -9,7 +9,7 @@ export default function EducationTemplate({ groupData, onUpdate, onDelete }) {
         label="School name"
         name="school"
         type="text"
-        placeholder="ex. 'Monsters University (MU)'"
+        placeholder="ex. 'Monsters University MU'"
         defaultValue={groupData.school}
         inputProps={{ autoCapitalize: "words" }}
       />
@@ -18,7 +18,7 @@ export default function EducationTemplate({ groupData, onUpdate, onDelete }) {
         label="Degree name"
         name="degree"
         type="text"
-        placeholder="ex. 'BA in Scares'"
+        placeholder="ex. 'BA in Scare Management'"
         defaultValue={groupData.degree}
         inputProps={{ autoCapitalize: "words" }}
       />

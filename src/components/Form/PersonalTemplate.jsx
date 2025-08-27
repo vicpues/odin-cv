@@ -8,7 +8,7 @@ export default function PersonalTemplate({ groupData, onUpdate }) {
         label="Name"
         name="name"
         type="text"
-        placeholder="ex. 'John Doe'"
+        placeholder="ex. 'Mike Wazowski'"
         defaultValue={groupData.name}
         inputProps={{ autoCapitalize: "words", autoComplete: "name" }}
       />
@@ -17,7 +17,7 @@ export default function PersonalTemplate({ groupData, onUpdate }) {
         label="Email"
         name="email"
         type="text"
-        placeholder="ex. 'email@example.com"
+        placeholder="ex. 'mike.wazowski@example.com'"
         defaultValue={groupData.email}
         inputProps={{ autoComplete: "email" }}
       />
@@ -35,7 +35,7 @@ export default function PersonalTemplate({ groupData, onUpdate }) {
         label="Location"
         name="location"
         type="text"
-        placeholder="ex. 'Boring, Oregon'"
+        placeholder="ex. 'Scareville, Monsterland'"
         defaultValue={groupData.location}
         inputProps={{ autoCapitalize: "words" }}
       />

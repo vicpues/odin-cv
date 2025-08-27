@@ -31,7 +31,7 @@ export default function GroupTemplate({ groupData, onUpdate, onDelete }) {
         name="details"
         type="textarea"
         placeholder={
-          "example:\n-Coordinating scare teams\n-Creating performance reports"
+          "example:\n-Coordinating scare teams\n-Writing performance reports"
         }
         defaultValue={groupData.details}
         inputProps={{ autoCapitalize: "sentence" }}
