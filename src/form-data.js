@@ -1,10 +1,13 @@
 export const data = {
-    personalData: {
-        name: "",
-        email: "",
-        phone: "",
-        location: "",
-    },
+    personalData: [
+        {
+            uniqueId: crypto.randomUUID(),
+            name: "",
+            email: "",
+            phone: "",
+            location: "",
+        },
+    ],
 
     educationData: [
         {

@@ -1,13 +1,36 @@
-import PersonalSection from "./PersonalSection";
-import EducationSection from "./EducationSection";
-import WorkSection from "./WorkSection";
+import FormSection from "./FormSection/FormSection";
+import PersonalTemplate from "./PersonalTemplate";
+import EducationTemplate from "./EducationTemplate";
+import WorkTemplate from "./WorkTemplate";
 
-export default function Form({ data, onUpdate }) {
+export default function Form({ data, updateFn }) {
   return (
     <div id="cv-form">
-      <PersonalSection data={data} updateData={onUpdate} />
-      <EducationSection data={data} updateData={onUpdate} />
-      <WorkSection data={data} updateData={onUpdate} />
+      <FormSection
+        title="Personal details"
+        groupName="personalData"
+        Template={PersonalTemplate}
+        data={data}
+        updateFn={updateFn}
+      />
+
+      <FormSection
+        title="Education"
+        groupName="educationData"
+        Template={EducationTemplate}
+        data={data}
+        updateFn={updateFn}
+        extendable={true}
+      />
+
+      <FormSection
+        title="Work experience"
+        groupName="workData"
+        Template={WorkTemplate}
+        data={data}
+        updateFn={updateFn}
+        extendable={true}
+      />
     </div>
   );
 }

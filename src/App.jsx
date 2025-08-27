@@ -6,13 +6,13 @@ import { data } from "./form-data";
 export default function App() {
   const [formData, setFormData] = useState(data);
 
-  function updateData(newData) {
+  function updateFn(newData) {
     setFormData(newData);
   }
 
   return (
     <>
-      <Form data={formData} onUpdate={updateData} />
+      <Form data={formData} updateFn={updateFn} />
     </>
   );
 }
