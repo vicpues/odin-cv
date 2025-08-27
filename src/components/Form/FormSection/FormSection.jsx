@@ -1,5 +1,6 @@
 import createUpdateHandler from "./createUpdateHandler";
 import createDeleteHandler from "./createDeleteHandler";
+import createAddHandler from "./createAddHandler";
 
 export default function FormSection({
   // eslint-disable-next-line no-unused-vars
@@ -33,7 +34,19 @@ export default function FormSection({
         );
       })}
 
-      {extensionTemplate && <button type="button">Add +</button>}
+      {extensionTemplate && (
+        <button
+          type="button"
+          onClick={createAddHandler(
+            extensionTemplate,
+            groupName,
+            data,
+            updateFn,
+          )}
+        >
+          Add +
+        </button>
+      )}
     </div>
   );
 }

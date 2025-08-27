@@ -14,7 +14,7 @@
   - [x] Actually implement state (maybe by bubbling it up with multiple setState functions)
   - [x] Delete group button
   - [_] Add input/group button
-    - [_] Use templates in each section
+    - [x] Use templates in each section
     - [_] Prevent collisions by regenerating ID if it already exists in group
 
 - [x] Fields
