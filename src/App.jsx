@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-import Form from "./components/sections/Form/Form";
+import Form from "./components/Form/Form";
 import { data } from "./form-data";
 
 export default function App() {
