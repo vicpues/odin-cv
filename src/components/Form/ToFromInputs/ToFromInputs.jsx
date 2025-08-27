@@ -1,8 +1,10 @@
 import Input from "../Input/Input";
+import handleChange from "../Input/handleChange";
 
 export default function ToFromInputs({ to, from }) {
   const DEFAULT_MIN = 1900;
   const CURRENT_YEAR = new Date().getFullYear();
+
   return (
     <>
       <Input
@@ -11,7 +13,14 @@ export default function ToFromInputs({ to, from }) {
         type="number"
         placeholder={CURRENT_YEAR}
         defaultValue={from}
-        inputProps={{ min: DEFAULT_MIN, max: CURRENT_YEAR }}
+        inputProps={{
+          min: DEFAULT_MIN,
+          max: CURRENT_YEAR,
+          onChange: (e) => {
+            validateInputs(e);
+            handleChange(e);
+          },
+        }}
       />
 
       <Input
@@ -28,4 +37,17 @@ export default function ToFromInputs({ to, from }) {
       />
     </>
   );
+
+  function validateInputs(e) {
+    const fromElement = getFromElement(e);
+    if (from === "") fromElement.value = CURRENT_YEAR;
+  }
+}
+
+function getFromElement(e) {
+  return getForm(e).querySelector(`input[name="from"]`);
+}
+
+function getForm(e) {
+  return e.target.form;
 }
