@@ -3,13 +3,12 @@ import createDeleteHandler from "./createDeleteHandler";
 
 export default function FormSection({
   // eslint-disable-next-line no-unused-vars
-  Template,
+  GroupTemplate,
   title,
   groupName,
   data,
   updateFn,
-  extendable = false,
-  onAdd = null,
+  extensionTemplate = null,
 }) {
   return (
     <div className="form-section">
@@ -23,20 +22,18 @@ export default function FormSection({
           groupId: groupData.uniqueId,
         };
         return (
-          <Template
+          <GroupTemplate
             key={groupData.uniqueId}
             groupData={groupData}
             onUpdate={createUpdateHandler(handlerArgs)}
-            onDelete={extendable ? createDeleteHandler(handlerArgs) : null}
+            onDelete={
+              extensionTemplate ? createDeleteHandler(handlerArgs) : null
+            }
           />
         );
       })}
 
-      {onAdd && (
-        <button onClick={onAdd} type="button">
-          Add +
-        </button>
-      )}
+      {extensionTemplate && <button type="button">Add +</button>}
     </div>
   );
 }

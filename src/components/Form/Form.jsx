@@ -9,7 +9,7 @@ export default function Form({ data, updateFn }) {
       <FormSection
         title="Personal details"
         groupName="personalData"
-        Template={PersonalTemplate}
+        GroupTemplate={PersonalTemplate}
         data={data}
         updateFn={updateFn}
       />
@@ -17,20 +17,36 @@ export default function Form({ data, updateFn }) {
       <FormSection
         title="Education"
         groupName="educationData"
-        Template={EducationTemplate}
+        GroupTemplate={EducationTemplate}
         data={data}
         updateFn={updateFn}
-        extendable={true}
+        extensionTemplate={educationDataTemplate}
       />
 
       <FormSection
         title="Work experience"
         groupName="workData"
-        Template={WorkTemplate}
+        GroupTemplate={WorkTemplate}
         data={data}
         updateFn={updateFn}
-        extendable={true}
+        extensionTemplate={workDataTemplate}
       />
     </div>
   );
 }
+
+const educationDataTemplate = {
+  school: "",
+  degree: "",
+  from: "",
+  to: "",
+  details: "",
+};
+
+const workDataTemplate = {
+  company: "",
+  position: "",
+  from: "",
+  to: "",
+  details: "",
+};
