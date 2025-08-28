@@ -1,1 +1,48 @@
 /* VARIABLES */
+#root {
+  /* Spacing */
+  font-size: 14px;
+  --margin-xxs: 0.25rem;
+  --margin-xs: 0.5rem;
+  --margin-s: 0.75rem;
+  --margin-m: 1rem;
+  --margin-l: 1.25rem;
+  --margin-xl: 1.75rem;
+  --margin-xxl: 2.5rem;
+
+  /* Default colors */
+  --bg-dark: hsl(186 34% 88%);
+  --bg: hsl(186 60% 93%);
+  --bg-light: hsl(186 100% 98%);
+  --text: hsl(189 100% 3%);
+  --text-muted: hsl(186 30% 25%);
+  --highlight: hsl(186 100% 97%);
+  --border: hsl(186 16% 47%);
+  --border-muted: hsl(186 19% 59%);
+  --primary: hsl(185 100% 10%);
+  --secondary: hsl(2 46% 31%);
+  --danger: hsl(9 21% 41%);
+  --warning: hsl(52 23% 34%);
+  --success: hsl(147 19% 36%);
+  --info: hsl(217 22% 41%);
+}
+
+/* Dark mode colors*/
+.dark-theme {
+  --bg-dark: hsl(190 100% 1%);
+  --bg: hsl(187 74% 3%);
+  --bg-light: hsl(186 43% 7%);
+  --text: hsl(186 98% 91%);
+  --text-muted: hsl(186 24% 66%);
+  --highlight: hsl(186 21% 36%);
+  --border: hsl(186 30% 25%);
+  --border-muted: hsl(186 53% 14%);
+  --primary: hsl(186 56% 58%);
+  --secondary: hsl(5 68% 74%);
+  --danger: hsl(9 26% 64%);
+  --warning: hsl(52 19% 57%);
+  --success: hsl(146 17% 59%);
+  --info: hsl(217 28% 65%);
+}
+
+/* UTILITY CLASSES */
