@@ -10,12 +10,9 @@
 #root {
   /* Typography (add sizes as needed) */
   --ff: "rubik-variable", Arial, Helvetica, sans-serif;
-  font-family: var(--ff);
   --p: 400 1rem/1.4em var(--ff);
-  font: var(--p);
 
   /* Spacing */
-  font-size: 14px;
   --margin-xxs: 0.25rem;
   --margin-xs: 0.5rem;
   --margin-s: 0.75rem;

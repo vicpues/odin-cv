@@ -1,1 +1,5 @@
 /* GENERAL */
+#root {
+  font-size: 14px;
+  font-family: var(--ff);
+}
