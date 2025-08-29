@@ -18,6 +18,7 @@ main {
 /* GENERAL */
 #root {
   background-color: var(--bg-dark);
+  color: var(--text);
   font-size: 14px;
   font-family: var(--ff);
 }

@@ -3,6 +3,7 @@
   box-shadow: var(--double-shadow);
   background-color: white;
   aspect-ratio: 0.707;
+  color: black;
 }
 
 .output-page {
