@@ -1,6 +1,7 @@
 import createUpdateHandler from "./createUpdateHandler";
 import createDeleteHandler from "./createDeleteHandler";
 import createAddHandler from "./createAddHandler";
+import "./FormSection.css";
 
 export default function FormSection({
   // eslint-disable-next-line no-unused-vars
@@ -12,8 +13,8 @@ export default function FormSection({
   extensionTemplate = null,
 }) {
   return (
-    <div>
-      <div>{title}</div>
+    <div className="form-section">
+      <h2 className="section-title">{title}</h2>
 
       {data[groupName].map((groupData) => {
         const handlerArgs = {

@@ -1,3 +1,11 @@
+/* TEMPORARY, delete this */
+* {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/* Font-face */
+
 @font-face {
   src:
     url("./assets/fonts/open_sans.woff2") format("woff2-variations"),
@@ -23,6 +31,7 @@
 
   /* Effects */
   --double-shadow: 0 1rem 2rem #0000000f, 0 0.2rem 0.6rem #0000002b;
+  --soft-shadow: 0 0 1rem #00000015;
 
   /* Default colors */
   --bg-dark: hsl(186 34% 88%);

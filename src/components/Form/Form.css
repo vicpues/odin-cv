@@ -1,4 +1,8 @@
 #cv-form {
   box-shadow: var(--double-shadow);
   background-color: var(--bg);
+
+  padding: var(--margin-xl) var(--margin-m);
+  scrollbar-color: var(--text-muted) var(--bg);
+  scrollbar-width: var(--margin-m);
 }

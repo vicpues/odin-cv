@@ -1,0 +1,14 @@
+.form-section {
+  box-shadow: var(--soft-shadow);
+  border-radius: var(--margin-m);
+  background-color: var(--bg-light);
+  padding: var(--margin-m);
+}
+
+.form-section + .form-section {
+  margin-top: var(--margin-m);
+}
+
+.section-title {
+  color: var(--text-muted);
+}
