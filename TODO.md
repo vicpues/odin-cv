@@ -37,8 +37,7 @@
 - [_] Go over aaaall the jsx and make sure it's semantic
 
 - [_] Styling (!!)
-  - [_] Maaaaaybe create a design file in figma
-  - [_] General layout (mobile first!)
+  - [x] General layout (mobile first!)
   - [_] Fix output element jankiness by giving it a totally fixed layout
   - [_] Style components individually
   - [_] Make that sucker responsive
