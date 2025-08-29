@@ -1,3 +1,5 @@
+import "./InputGroup.css";
+
 export default function InputGroup({ children, onUpdate, onDelete = null }) {
   return (
     <form

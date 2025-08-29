@@ -1,0 +1,12 @@
+.input-group {
+  padding: var(--margin-s);
+
+  &.extensible {
+    border-radius: var(--margin-s);
+    background-color: var(--bg);
+  }
+}
+
+.input-group + .input-group {
+  margin-top: var(--margin-m);
+}
