@@ -19,4 +19,9 @@
     background-color: var(--primary);
     color: var(--bg-light);
   }
+
+  &:active {
+    transform: scale(0.95);
+    filter: brightness(1.2);
+  }
 }

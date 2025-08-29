@@ -18,4 +18,9 @@
     background-color: var(--danger);
     color: var(--bg-light);
   }
+
+  &:active {
+    transform: scale(1);
+    filter: brightness(1.3);
+  }
 }
