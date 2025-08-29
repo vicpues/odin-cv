@@ -1,7 +1,7 @@
 @font-face {
   src:
-    url("./assets/fonts/open_sans_subset.woff2") format("woff2-variations"),
-    url("./assets/fonts/open_sans_subset.woff") format("woff-variations");
+    url("./assets/fonts/open_sans.woff2") format("woff2-variations"),
+    url("./assets/fonts/open_sans.woff") format("woff-variations");
   font-family: "open-sans";
   font-display: swap;
 }
@@ -9,7 +9,7 @@
 /* VARIABLES */
 #root {
   /* Typography (add sizes as needed) */
-  --ff: "rubik-variable", Arial, Helvetica, sans-serif;
+  --ff: "open-sans", Arial, Helvetica, sans-serif;
   --p: 400 1rem/1.4em var(--ff);
 
   /* Spacing */
