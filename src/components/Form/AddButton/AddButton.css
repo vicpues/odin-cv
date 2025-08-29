@@ -1,0 +1,22 @@
+.add-group-button {
+  display: block;
+
+  transition: all 0.1s;
+  cursor: pointer;
+  margin: var(--margin-xs) auto var(--margin-s);
+  border: 1px solid var(--border);
+  border-radius: 1000rem;
+  background-color: var(--bg-dark);
+  width: 8rem;
+  height: 2rem;
+  color: var(--border);
+
+  &:hover,
+  &:focus {
+    transform: scaleY(1.1) scaleX(1.05);
+    transition: all 0.2s;
+    outline: none;
+    background-color: var(--primary);
+    color: var(--bg-light);
+  }
+}
