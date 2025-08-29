@@ -39,6 +39,7 @@
 - [_] Styling (!!)
   - [_] Maaaaaybe create a design file in figma
   - [_] General layout (mobile first!)
+  - [_] Fix output element jankiness by giving it a totally fixed layout
   - [_] Style components individually
   - [_] Make that sucker responsive
 

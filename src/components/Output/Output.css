@@ -1,0 +1,14 @@
+#output-container {
+  margin: var(--margin-xxl) auto;
+  box-shadow: var(--double-shadow);
+  background-color: white;
+  aspect-ratio: 0.707;
+}
+
+.output-page {
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  font-size: 0.6cqw;
+  line-height: 1.4;
+}
