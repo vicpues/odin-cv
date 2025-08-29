@@ -2,7 +2,9 @@
   box-shadow: var(--double-shadow);
   background-color: var(--bg);
 
-  padding: var(--margin-xl) var(--margin-m);
-  scrollbar-color: var(--text-muted) var(--bg);
-  scrollbar-width: var(--margin-m);
+  padding: var(--margin-xl) var(--margin-m) var(--margin-xl)
+    calc(2 * var(--margin-m));
+  overflow-y: auto;
+  scrollbar-color: var(--border-muted) var(--bg);
+  scrollbar-gutter: var(--margin-m);
 }

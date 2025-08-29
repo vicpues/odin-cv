@@ -1,15 +1,24 @@
+#output-column {
+  overflow-y: auto;
+  scrollbar-color: var(--border-muted) var(--bg-dark);
+  scrollbar-gutter: var(--margin-m);
+  scrollbar-width: var(--margin-m);
+}
+
 #output-container {
-  margin: var(--margin-xxl) auto;
-  box-shadow: var(--double-shadow);
-  background-color: white;
-  aspect-ratio: 0.707;
-  color: black;
+  --page-width: 50em;
+  display: block;
+  justify-self: center;
+  margin: var(--margin-xl);
+  width: var(--page-width);
 }
 
 .output-page {
+  --aspect-ratio: 1.414;
+  box-shadow: var(--double-shadow);
+  background-color: white;
   padding: 10%;
-  width: 100%;
-  height: 100%;
-  font-size: 0.6cqw;
-  line-height: 1.4;
+  min-height: calc(var(--page-width) * var(--aspect-ratio));
+  overflow-y: visible;
+  color: black;
 }

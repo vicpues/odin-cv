@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  align-items: center;
+
+  box-shadow: var(--soft-shadow);
+  background-color: var(--primary);
+  padding-inline: var(--margin-xl);
+  height: var(--nav-height);
+  color: var(--bg-light);
+
+  #app-title {
+    font: var(--h1);
+    letter-spacing: 0.05em;
+  }
+}
