@@ -1,5 +1,7 @@
 .input-group {
+  display: flex;
   position: relative;
+  flex-direction: column;
   gap: var(--margin-m);
   padding: var(--margin-m);
 
