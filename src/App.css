@@ -19,4 +19,5 @@ main {
 #root {
   background-color: var(--bg-dark);
   font-size: 14px;
+  font-family: var(--ff);
 }
