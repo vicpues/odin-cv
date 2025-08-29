@@ -34,6 +34,7 @@ export default function FormSection({
         return (
           <GroupTemplate
             key={groupData.uniqueId}
+            sectionTitle={title}
             groupData={groupData}
             onUpdate={createUpdateHandler(handlerArgs)}
             onDelete={

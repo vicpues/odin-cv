@@ -2,9 +2,18 @@ import Input from "./Input/Input";
 import ToFromInputs from "./ToFromInputs/ToFromInputs";
 import InputGroup from "./InputGroup/InputGroup";
 
-export default function EducationTemplate({ groupData, onUpdate, onDelete }) {
+export default function EducationTemplate({
+  sectionTitle,
+  groupData,
+  onUpdate,
+  onDelete,
+}) {
   return (
-    <InputGroup onUpdate={onUpdate} onDelete={onDelete}>
+    <InputGroup
+      sectionTitle={sectionTitle}
+      onUpdate={onUpdate}
+      onDelete={onDelete}
+    >
       <Input
         label="School name"
         name="school"

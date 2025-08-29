@@ -1,0 +1,21 @@
+.delete-group-button {
+  position: absolute;
+  top: 0;
+  right: var(--margin-m);
+  transition: all 0.1s;
+  cursor: pointer;
+  border: 1px solid var(--danger);
+  border-radius: var(--margin-xs);
+  background-color: var(--bg-light);
+  width: 2em;
+  height: 2em;
+  color: var(--danger);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+    outline: none;
+    background-color: var(--danger);
+    color: var(--bg-light);
+  }
+}

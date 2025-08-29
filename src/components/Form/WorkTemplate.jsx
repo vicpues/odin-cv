@@ -2,10 +2,18 @@ import Input from "./Input/Input";
 import ToFromInputs from "./ToFromInputs/ToFromInputs";
 import InputGroup from "./InputGroup/InputGroup";
 
-export default function GroupTemplate({ groupData, onUpdate, onDelete }) {
-  const CURRENT_YEAR = new Date().getFullYear();
+export default function GroupTemplate({
+  sectionTitle,
+  groupData,
+  onUpdate,
+  onDelete,
+}) {
   return (
-    <InputGroup onUpdate={onUpdate} onDelete={onDelete}>
+    <InputGroup
+      sectionTitle={sectionTitle}
+      onUpdate={onUpdate}
+      onDelete={onDelete}
+    >
       <Input
         label="Company name"
         name="company"

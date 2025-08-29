@@ -1,9 +1,13 @@
 import Input from "./Input/Input";
 import InputGroup from "./InputGroup/InputGroup";
 
-export default function PersonalTemplate({ groupData, onUpdate }) {
+export default function PersonalTemplate({
+  sectionTitle,
+  groupData,
+  onUpdate,
+}) {
   return (
-    <InputGroup onUpdate={onUpdate}>
+    <InputGroup sectionTitle={sectionTitle} onUpdate={onUpdate}>
       <Input
         label="Name"
         name="name"
