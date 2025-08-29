@@ -1,3 +1,4 @@
+import AddButton from "../AddButton/AddButton";
 import createUpdateHandler from "./createUpdateHandler";
 import createDeleteHandler from "./createDeleteHandler";
 import createAddHandler from "./createAddHandler";
@@ -12,6 +13,13 @@ export default function FormSection({
   updateFn,
   extensionTemplate = null,
 }) {
+  const addHandler = createAddHandler(
+    extensionTemplate,
+    groupName,
+    data,
+    updateFn,
+  );
+
   return (
     <div className="form-section">
       <h2 className="section-title">{title}</h2>
@@ -36,17 +44,7 @@ export default function FormSection({
       })}
 
       {extensionTemplate && (
-        <button
-          type="button"
-          onClick={createAddHandler(
-            extensionTemplate,
-            groupName,
-            data,
-            updateFn,
-          )}
-        >
-          Add +
-        </button>
+        <AddButton sectionName={title} handler={addHandler} />
       )}
     </div>
   );
