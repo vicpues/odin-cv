@@ -1,14 +1,36 @@
 .input-container {
-  input,
-  textarea {
+  .input,
+  .input-label {
+    padding-inline: var(--margin-s);
+  }
+
+  .input-label {
+    color: var(--text);
+  }
+
+  .input {
     border: none;
     border-radius: var(--margin-s);
     background-color: var(--bg);
-    padding: var(--margin-xxs) var(--margin-s);
     width: 100%;
+    color: var(--text-muted);
+
+    &:focus {
+      outline-color: var(--border);
+    }
+
+    &::placeholder {
+      color: var(--border);
+      font-style: italic;
+    }
+  }
+
+  input {
+    padding-block: var(--margin-xxs);
   }
 
   textarea {
-    height: max-content;
+    padding-block: var(--margin-xs);
+    resize: none;
   }
 }

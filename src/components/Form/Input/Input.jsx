@@ -21,7 +21,7 @@ export default function Input({
 
   return (
     <label className="input-container">
-      <span>{label}</span>
+      <span className="input-label">{label}</span>
       {icon}
       {type === "textarea" ? (
         <TextareaElement {...fieldProps} />
@@ -33,14 +33,21 @@ export default function Input({
 }
 
 function InputElement(props) {
-  return <input {...props} onChange={props.onChange || handleChange} />;
+  return (
+    <input
+      className="input"
+      {...props}
+      onChange={props.onChange || handleChange}
+    />
+  );
 }
 
 function TextareaElement(props) {
   return (
     <textarea
+      className="input"
       {...props}
-      style={{ resize: "none" }}
+      rows={5}
       onChange={handleChange}
     ></textarea>
   );
