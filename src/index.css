@@ -21,6 +21,9 @@
   --margin-xl: 1.75rem;
   --margin-xxl: 2.5rem;
 
+  /* Effects */
+  --double-shadow: 0 1rem 2rem #0000000f, 0 0.2rem 0.6rem #0000002b;
+
   /* Default colors */
   --bg-dark: hsl(186 34% 88%);
   --bg: hsl(186 60% 93%);

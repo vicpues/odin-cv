@@ -13,9 +13,10 @@ export default function App() {
 
   return (
     <>
-      <Form data={formData} updateFn={updateFn} />
-      <hr style={{ margin: "2rem 0" }} />
-      <Output data={formData} />
+      <main>
+        <Form data={formData} updateFn={updateFn} />
+        <Output data={formData} />
+      </main>
     </>
   );
 }

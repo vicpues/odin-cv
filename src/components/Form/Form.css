@@ -1,0 +1,4 @@
+#cv-form {
+  box-shadow: var(--double-shadow);
+  background-color: var(--bg);
+}
