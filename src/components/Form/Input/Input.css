@@ -1,0 +1,14 @@
+.input-container {
+  input,
+  textarea {
+    border: none;
+    border-radius: var(--margin-s);
+    background-color: var(--bg);
+    padding: var(--margin-xxs) var(--margin-s);
+    width: 100%;
+  }
+
+  textarea {
+    height: max-content;
+  }
+}

@@ -1,9 +1,8 @@
 .input-group {
-  padding: var(--margin-s);
+  padding: var(--margin-m);
 
   &.extensible {
     border-radius: var(--margin-s);
-    background-color: var(--bg);
   }
 }
 

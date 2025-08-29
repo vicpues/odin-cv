@@ -1,4 +1,5 @@
 import handleChange from "./handleChange";
+import "./Input.css";
 
 export default function Input({
   label,
@@ -19,7 +20,7 @@ export default function Input({
   };
 
   return (
-    <label>
+    <label className="input-container">
       <span>{label}</span>
       {icon}
       {type === "textarea" ? (
