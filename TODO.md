@@ -38,8 +38,12 @@
 
 - [_] Styling (!!)
   - [x] General layout (mobile first!)
-  - [_] Fix output element jankiness by giving it a totally fixed layout
-  - [_] Style components individually
+  - [_] Style output
+  - [_] Put To/From inputs side by side with a container or smn
+  - [_] Icons
+    - [_] Use mdi icons in add/delete buttons
+    - [_] Add mdi icons to output
+    - [_] See if icons would look good anywhere else (though it looks pretty good as is)
   - [_] Make that sucker responsive
 
 - [_] Optional features (put extra ideas in here)
