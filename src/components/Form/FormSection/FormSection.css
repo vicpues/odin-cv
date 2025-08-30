@@ -11,4 +11,5 @@
 
 .section-title {
   color: var(--text-muted);
+  font: var(--h2);
 }
