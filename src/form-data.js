@@ -3,6 +3,7 @@ export const data = {
         {
             uniqueId: crypto.randomUUID(),
             name: "Mike Wazowski",
+            description: "Scare supervisor",
             email: "mike.wazowski@example.com",
             phone: "+44 444 444 44",
             location: "Scareville, Monsterland",

@@ -18,6 +18,15 @@ export default function PersonalTemplate({
       />
 
       <Input
+        label="Description"
+        name="description"
+        type="text"
+        placeholder="ex. 'Scare supervisor'"
+        defaultValue={groupData.description}
+        inputProps={{ autoCapitalize: "words" }}
+      />
+
+      <Input
         label="Email"
         name="email"
         type="text"

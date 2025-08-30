@@ -13,6 +13,7 @@ export default function Output({ data }) {
         <div className="output-page">
           <div>
             <div>{personal.name}</div>
+            <div>{personal.description}</div>
             <span>{personal.email}</span> <span>{personal.phone}</span>{" "}
             <span>{personal.location}</span>
             <div>
