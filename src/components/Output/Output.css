@@ -21,4 +21,6 @@
   min-height: calc(var(--page-width) * var(--aspect-ratio));
   overflow-y: visible;
   color: black;
+  font-size: 0.9cqw;
+  line-height: 1.4em;
 }
