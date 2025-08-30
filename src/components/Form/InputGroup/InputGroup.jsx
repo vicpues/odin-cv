@@ -8,10 +8,7 @@ export default function InputGroup({
   onDelete = null,
 }) {
   return (
-    <form
-      onSubmit={onUpdate}
-      className={"input-group" + (onDelete ? " extensible" : "")}
-    >
+    <form onSubmit={onUpdate} className="input-group">
       {onDelete && (
         <DeleteButton sectionTitle={sectionTitle} onDelete={onDelete} />
       )}
