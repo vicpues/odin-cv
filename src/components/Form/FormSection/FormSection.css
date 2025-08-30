@@ -10,6 +10,8 @@
 }
 
 .section-title {
+  margin-bottom: var(--margin-xs);
+  padding-left: var(--margin-s);
   color: var(--text-muted);
   font: var(--h2);
 }
