@@ -13,3 +13,13 @@
 .input-group + .input-group {
   margin-top: var(--margin-m);
 }
+
+/* #hackz */
+.input-group:has(+ .input-group) {
+  --separator-width: calc(100% - 1px);
+  background: linear-gradient(
+    var(--bg-light) var(--separator-width),
+    var(--border-muted) var(--separator-width)
+  );
+  padding-bottom: var(--margin-xl);
+}
