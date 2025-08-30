@@ -2,7 +2,7 @@
   box-shadow: var(--soft-shadow);
   border-radius: var(--margin-m);
   background-color: var(--bg-light);
-  padding: var(--margin-m);
+  padding: var(--margin-xl);
 }
 
 .form-section + .form-section {

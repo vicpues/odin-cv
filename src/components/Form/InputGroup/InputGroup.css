@@ -3,7 +3,7 @@
   position: relative;
   flex-direction: column;
   gap: var(--margin-m);
-  padding: var(--margin-m);
+  padding-top: var(--margin-m);
 
   &.extensible {
     border-radius: var(--margin-s);
@@ -11,7 +11,7 @@
 }
 
 .input-group + .input-group {
-  margin-top: var(--margin-m);
+  margin-top: var(--margin-xl);
 }
 
 /* #hackz */
