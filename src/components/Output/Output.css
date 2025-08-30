@@ -6,19 +6,20 @@
 }
 
 #output-container {
+  --min-aspect-ratio: 1.414;
   --page-width: 50em;
   display: block;
   justify-self: center;
-  margin: var(--margin-xl);
+  margin: var(--margin-xl) auto;
   width: var(--page-width);
+  height: calc(var(--page-width) * var(--min-aspect-ratio));
 }
 
 .output-page {
-  --aspect-ratio: 1.414;
   box-shadow: var(--double-shadow);
   background-color: white;
   padding: 10%;
-  min-height: calc(var(--page-width) * var(--aspect-ratio));
+  height: 100%;
   overflow-y: visible;
   color: black;
   font-size: 0.9cqw;
