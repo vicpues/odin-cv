@@ -45,4 +45,11 @@
       font: var(--h-sub);
     }
   }
+
+  .contact-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    line-height: 1.1;
+  }
 }

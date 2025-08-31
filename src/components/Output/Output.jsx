@@ -15,13 +15,19 @@ export default function Output({ data }) {
             <div className="name">{personal.name}</div>
             <div className="description">{personal.description}</div>
           </div>
-          <div>
-            <span>{personal.email}</span> <span>{personal.phone}</span>{" "}
-            <span>{personal.location}</span>
-            <div>
-              <Paragraphs string={personal.about} />
-            </div>
+
+          <div className="contact-cell">
+            {personal.email && <div className="mail">{personal.email}</div>}
+            {personal.phone && <div className="phone">{personal.phone}</div>}
+            {personal.location && (
+              <div className="location">{personal.location}</div>
+            )}
           </div>
+
+          <div className="about-cell">
+            <Paragraphs string={personal.about} />
+          </div>
+
           {education.length > 0 && (
             <>
               <hr />
