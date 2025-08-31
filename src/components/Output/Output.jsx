@@ -25,6 +25,8 @@ export default function Output({ data }) {
           </div>
 
           <div className="about-cell">
+            <div className="output-title">About me</div>
+            <hr className="output-separator" />
             <Paragraphs string={personal.about} />
           </div>
 

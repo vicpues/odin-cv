@@ -3,7 +3,9 @@ export default function Paragraphs({ string }) {
   return (
     <>
       {lines.map((line, index) => (
-        <p key={index}>{line}</p>
+        <p key={index} className="output-para">
+          {line}
+        </p>
       ))}
     </>
   );
