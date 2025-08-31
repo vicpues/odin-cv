@@ -30,11 +30,11 @@ export default function Output({ data }) {
             <Paragraphs string={personal.about} />
           </div>
 
-          {education.length > 0 && (
-            <>
-              <hr />
-              <div>
-                <div>Education</div>
+          <div className="history-cell">
+            {education.length > 0 && (
+              <div className="history-section">
+                <div className="output-title">Education</div>
+                <hr className="output-separator" />
                 {education.map((group) => (
                   <div key={group.uniqueId}>
                     <div>{group.degree}</div>
@@ -46,13 +46,12 @@ export default function Output({ data }) {
                   </div>
                 ))}
               </div>
-            </>
-          )}
-          {work.length > 0 && (
-            <>
-              <hr />
-              <div>
-                <div>Work experience</div>
+            )}
+
+            {work.length > 0 && (
+              <div className="history-section">
+                <div className="output-title">Work experience</div>
+                <hr className="output-separator" />
                 {work.map((group) => (
                   <div key={group.uniqueId}>
                     <div>{group.company}</div>
@@ -64,8 +63,8 @@ export default function Output({ data }) {
                   </div>
                 ))}
               </div>
-            </>
-          )}
+            )}
+          </div>
         </div>
       </output>
     </div>
