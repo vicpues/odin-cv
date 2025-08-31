@@ -10,10 +10,12 @@ export default function Output({ data }) {
   return (
     <div id="output-column">
       <output id="output-container">
-        <div className="output-page">
+        <div className="output-page two-column-layout">
+          <div className="name-cell">
+            <div className="name">{personal.name}</div>
+            <div className="description">{personal.description}</div>
+          </div>
           <div>
-            <div>{personal.name}</div>
-            <div>{personal.description}</div>
             <span>{personal.email}</span> <span>{personal.phone}</span>{" "}
             <span>{personal.location}</span>
             <div>
