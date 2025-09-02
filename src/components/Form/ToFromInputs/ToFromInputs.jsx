@@ -1,12 +1,13 @@
 import Input from "../Input/Input";
 import handleChange from "../Input/handleChange";
+import "./ToFromInputs.css";
 
 export default function ToFromInputs({ to, from }) {
   const DEFAULT_MIN = 1900;
   const CURRENT_YEAR = new Date().getFullYear();
 
   return (
-    <>
+    <div className="dates-container">
       <Input
         label="From:"
         name="from"
@@ -35,7 +36,7 @@ export default function ToFromInputs({ to, from }) {
           max: CURRENT_YEAR,
         }}
       />
-    </>
+    </div>
   );
 
   function validateInputs(e) {

@@ -1,0 +1,8 @@
+.dates-container {
+  display: flex;
+  gap: var(--margin-xl);
+
+  > .input-container {
+    flex: 1;
+  }
+}
