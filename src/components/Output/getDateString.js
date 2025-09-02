@@ -3,10 +3,10 @@ export default function getDateString(from, to) {
         return "";
     }
     if (!to) {
-        return `(${from} — Present)`;
+        return ` | ${from} — Present`;
     }
     if (from === to) {
-        return `(${from})`;
+        return ` | ${from}`;
     }
-    return `(${from} — ${to})`;
+    return ` | ${from} — ${to}`;
 }

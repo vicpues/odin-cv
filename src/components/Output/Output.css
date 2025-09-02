@@ -65,11 +65,29 @@
     grid-area: 2 / 2 / 2 / span 2;
     flex-direction: column;
     gap: 2em;
+
+    .history-entry + .history-entry {
+      margin-top: 1.75em;
+    }
+
+    .history-entry {
+      .entry-title {
+        font-size: 1.15em;
+      }
+
+      .entry-subtitle {
+        margin-bottom: 0.5em;
+        color: var(--text-muted);
+      }
+
+      .entry-details {
+        padding-left: 1em;
+      }
+    }
   }
 }
 
 .output-title {
-  padding-left: 0em;
   font: var(--h-smol);
 }
 

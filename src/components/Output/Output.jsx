@@ -36,11 +36,13 @@ export default function Output({ data }) {
                 <div className="output-title">Education</div>
                 <hr className="output-separator" />
                 {education.map((group) => (
-                  <div key={group.uniqueId}>
-                    <div>{group.degree}</div>
-                    <span>{group.school}</span>{" "}
-                    <span>{getDateString(group.from, group.to)}</span>
-                    <div>
+                  <div className="history-entry" key={group.uniqueId}>
+                    <div className="entry-title">{group.degree}</div>
+                    <div className="entry-subtitle">
+                      <span>{group.school}</span>{" "}
+                      <span>{getDateString(group.from, group.to)}</span>
+                    </div>
+                    <div className="entry-details">
                       <Paragraphs string={group.details} />
                     </div>
                   </div>
@@ -53,11 +55,13 @@ export default function Output({ data }) {
                 <div className="output-title">Work experience</div>
                 <hr className="output-separator" />
                 {work.map((group) => (
-                  <div key={group.uniqueId}>
-                    <div>{group.company}</div>
-                    <span>{group.position}</span>{" "}
-                    <span>{getDateString(group.from, group.to)}</span>
-                    <div>
+                  <div className="history-entry" key={group.uniqueId}>
+                    <div className="entry-title">{group.company}</div>
+                    <div className="entry-subtitle">
+                      <span>{group.position}</span>{" "}
+                      <span>{getDateString(group.from, group.to)}</span>
+                    </div>
+                    <div className="entry-details">
                       <Paragraphs string={group.details} />
                     </div>
                   </div>
