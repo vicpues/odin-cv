@@ -9,13 +9,10 @@
 }
 
 /* VARIABLES */
-#root {
+:root {
   /* Typography (add sizes as needed) */
   --ff: "open-sans", Arial, Helvetica, sans-serif;
-  --h-big: 600 3em/1.2em var(--ff);
-  --h-smol: 400 2em/1.2em var(--ff);
-  --h-sub: 600 1.5em/1.4em var(--ff);
-  --h1: ultra-expanded 900 1.5em/1.4em var(--ff);
+  --h1: 900 1.5em/1.4em var(--ff);
   --h2: 400 1.3em/1.4em var(--ff);
   --p: 400 1em/1.4em var(--ff);
 

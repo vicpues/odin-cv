@@ -6,7 +6,7 @@ nav {
   left: 0;
   align-items: center;
 
-  box-shadow: var(--soft-shadow);
+  box-shadow: var(--double-shadow);
   background-color: var(--primary);
   padding-inline: var(--margin-xl);
   height: var(--nav-height);

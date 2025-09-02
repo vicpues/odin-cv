@@ -40,8 +40,8 @@
   - [x] General layout
   - [_] Style output ([idea](https://www.scribd.com/document/660775539/academic-word-resume-template))
     - [x] Style each individual education/work datapoint
-    - [_] Maybe use variables in the output file for font/spacing like we did on [index.css](./src/index.css) cause it's getting pretty messy in that css file
-      - [_] whoa I didn't know you could use dir links in markdown
+    - [x] Maybe use variables in the output file for font/spacing like we did on [index.css](./src/index.css) cause it's getting pretty messy in that css file
+      - [x] whoa I didn't know you could use dir links in markdown
   - [_] Put To/From inputs side by side with a container or smn
   - [_] Look at (idea) and see if we should add more datapoints
   - [_] Tweak dark mode colors
