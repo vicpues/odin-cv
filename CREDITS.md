@@ -7,6 +7,7 @@
 ## Assets
 
 - [Open Sans font](https://fonts.google.com/specimen/Open+Sans) by Steve Matteson. Via Google Fonts.
+- [Plus icon](https://pictogrammers.com/library/mdi/icon/plus/), [Close icon](https://pictogrammers.com/library/mdi/icon/close/), from Material Design Icons, by Google. Via npm.
 
 ## Tools
 
