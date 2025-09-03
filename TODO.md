@@ -43,7 +43,7 @@
     - [x] Maybe use variables in the output file for font/spacing like we did on [index.css](./src/index.css) cause it's getting pretty messy in that css file
       - [x] whoa I didn't know you could use dir links in markdown
   - [x] Put To/From inputs side by side with a container or smn
-  - [_] Tweak dark mode colors
+  - [x] Tweak dark mode colors
   - [x] Remove unused dependencies and add mdi icons
   - [x] Icons
     - [x] Use mdi icons in add/delete buttons

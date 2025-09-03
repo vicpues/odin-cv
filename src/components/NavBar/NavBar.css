@@ -10,7 +10,7 @@ nav {
   background-color: var(--primary);
   padding-inline: var(--margin-xl);
   height: var(--nav-height);
-  color: var(--bg-light);
+  color: var(--text-white);
 
   #app-title {
     font: var(--h1);
