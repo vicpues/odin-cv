@@ -1,4 +1,5 @@
 #output-column {
+  padding: var(--margin-xl) var(--margin-m);
   overflow-y: auto;
   scrollbar-color: var(--border-muted) var(--bg-dark);
   scrollbar-gutter: var(--margin-m);
@@ -7,11 +8,10 @@
 
 #output-container {
   --min-aspect-ratio: 1.414; /* A4 Paper size */
-  --page-width: 45rem;
+  --page-width: min(40cqw, 50rem);
   --rem: calc(0.018 * var(--page-width));
   display: flex;
   justify-self: center;
-  margin: var(--margin-xl) auto;
   width: var(--page-width);
   min-height: calc(var(--page-width) * var(--min-aspect-ratio));
 }
