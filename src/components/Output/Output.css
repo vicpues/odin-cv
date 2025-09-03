@@ -76,7 +76,7 @@
       gap: var(--margin-xs);
 
       .breakable {
-        word-break: break-all;
+        word-break: break-word;
       }
     }
   }

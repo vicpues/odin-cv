@@ -45,11 +45,11 @@
   - [x] Put To/From inputs side by side with a container or smn
   - [_] Tweak dark mode colors
   - [x] Remove unused dependencies and add mdi icons
-  - [_] Icons
+  - [x] Icons
     - [x] Use mdi icons in add/delete buttons
     - [x] Add mdi icons to output
-    - [_] Preprocess email address to include soft breaks
-    - [_] See if icons would look good anywhere else (though it looks pretty good as is)
+    - [x] Preprocess email address to include soft breaks
+    - [x] See if icons would look good anywhere else (though it looks pretty good as is)
   - [_] Make that sucker responsive
 
 - [_] Optional features (put extra ideas in here)

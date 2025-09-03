@@ -1,4 +1,5 @@
 import getDateString from "./getDateString";
+import processEmail from "./processEmail";
 import Paragraphs from "./Paragraphs";
 import Icon from "@mdi/react";
 import { mdiEmailOutline, mdiPhoneOutline, mdiMapMarkerOutline } from "@mdi/js";
@@ -22,7 +23,9 @@ export default function Output({ data }) {
             {personal.email && (
               <div className="contact-item">
                 {<Icon path={mdiEmailOutline} className="inline-icon" />}
-                <div className="contact-text breakable">{personal.email}</div>
+                <div className="contact-text breakable">
+                  {processEmail(personal.email)}
+                </div>
               </div>
             )}
             {personal.phone && (
