@@ -47,7 +47,8 @@
   - [x] Remove unused dependencies and add mdi icons
   - [_] Icons
     - [x] Use mdi icons in add/delete buttons
-    - [_] Add mdi icons to output
+    - [x] Add mdi icons to output
+    - [_] Preprocess email address to include soft breaks
     - [_] See if icons would look good anywhere else (though it looks pretty good as is)
   - [_] Make that sucker responsive
 

@@ -1,5 +1,7 @@
 import getDateString from "./getDateString";
 import Paragraphs from "./Paragraphs";
+import Icon from "@mdi/react";
+import { mdiEmailOutline, mdiPhoneOutline, mdiMapMarkerOutline } from "@mdi/js";
 import "./Output.css";
 
 export default function Output({ data }) {
@@ -17,10 +19,23 @@ export default function Output({ data }) {
           </div>
 
           <div className="contact-cell">
-            {personal.email && <div className="mail">{personal.email}</div>}
-            {personal.phone && <div className="phone">{personal.phone}</div>}
+            {personal.email && (
+              <div className="contact-item">
+                {<Icon path={mdiEmailOutline} className="inline-icon" />}
+                <div className="contact-text breakable">{personal.email}</div>
+              </div>
+            )}
+            {personal.phone && (
+              <div className="contact-item">
+                {<Icon path={mdiPhoneOutline} className="inline-icon" />}
+                <div className="contact-text">{personal.phone}</div>
+              </div>
+            )}
             {personal.location && (
-              <div className="location">{personal.location}</div>
+              <div className="contact-item">
+                {<Icon path={mdiMapMarkerOutline} className="inline-icon" />}
+                <div className="contact-text">{personal.location}</div>
+              </div>
             )}
           </div>
 

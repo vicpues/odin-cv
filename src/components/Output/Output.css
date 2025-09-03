@@ -46,7 +46,7 @@
 .two-column-layout {
   display: grid;
   grid-template-rows: max-content 1fr;
-  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-columns: 1.3fr 1fr 1.4fr;
   gap: var(--margin-xxl) var(--margin-xl);
 
   .name-cell {
@@ -69,6 +69,16 @@
     justify-content: center;
     gap: var(--margin-s);
     line-height: 1.1;
+
+    .contact-item {
+      display: grid;
+      grid-template-columns: 1em 1fr;
+      gap: var(--margin-xs);
+
+      .breakable {
+        word-break: break-all;
+      }
+    }
   }
 
   .about-cell {
