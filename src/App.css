@@ -13,7 +13,7 @@ body {
 main {
   display: grid;
   grid-template-rows: calc(100vh - var(--nav-height));
-  grid-template-columns: 40rem 1fr;
+  grid-template-columns: min(50vw, 40rem) 1fr;
   padding-top: var(--nav-height);
 }
 
