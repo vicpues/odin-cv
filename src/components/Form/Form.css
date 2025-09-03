@@ -1,10 +1,9 @@
 #cv-form {
+  --responsive-padding: min(1.5vw, var(--margin-m));
   box-shadow: var(--double-shadow);
   background-color: var(--bg);
-
-  padding: var(--margin-xl) var(--margin-m) var(--margin-xl)
-    calc(2 * var(--margin-m));
+  padding-inline: var(--responsive-padding) var(--responsive-padding);
+  padding-block: calc(2 * var(--responsive-padding));
   overflow-y: auto;
   scrollbar-color: var(--border-muted) var(--bg);
-  scrollbar-gutter: var(--margin-m);
 }

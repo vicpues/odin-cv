@@ -2,11 +2,11 @@
   box-shadow: var(--soft-shadow);
   border-radius: var(--margin-m);
   background-color: var(--bg-light);
-  padding: var(--margin-xl);
+  padding: calc(1.5 * var(--responsive-padding)) var(--responsive-padding);
 }
 
 .form-section + .form-section {
-  margin-top: var(--margin-m);
+  margin-top: var(--margin-xl);
 }
 
 .section-title {
