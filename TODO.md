@@ -47,7 +47,7 @@
   - [_] Tweak dark mode colors
   - [x] Remove unused dependencies and add mdi icons
   - [_] Icons
-    - [_] Use mdi icons in add/delete buttons
+    - [x] Use mdi icons in add/delete buttons
     - [_] Lazy load icons to minimize bundle size
     - [_] Add mdi icons to output
     - [_] See if icons would look good anywhere else (though it looks pretty good as is)

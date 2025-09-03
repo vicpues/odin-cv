@@ -1,3 +1,5 @@
+import Icon from "@mdi/react";
+import { mdiClose } from "@mdi/js";
 import "./DeleteButton.css";
 
 export default function DeleteButton({ sectionTitle, onDelete }) {
@@ -10,7 +12,7 @@ export default function DeleteButton({ sectionTitle, onDelete }) {
       onClick={onDelete}
       type="button"
     >
-      X
+      <Icon path={mdiClose} size={1} className="centered-icon" />
     </button>
   );
 }
