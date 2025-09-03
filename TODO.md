@@ -43,12 +43,10 @@
     - [x] Maybe use variables in the output file for font/spacing like we did on [index.css](./src/index.css) cause it's getting pretty messy in that css file
       - [x] whoa I didn't know you could use dir links in markdown
   - [x] Put To/From inputs side by side with a container or smn
-  - [_] Look at (idea) and see if we should add more datapoints
   - [_] Tweak dark mode colors
   - [x] Remove unused dependencies and add mdi icons
   - [_] Icons
     - [x] Use mdi icons in add/delete buttons
-    - [_] Lazy load icons to minimize bundle size
     - [_] Add mdi icons to output
     - [_] See if icons would look good anywhere else (though it looks pretty good as is)
   - [_] Make that sucker responsive
@@ -62,6 +60,7 @@
   - [x] Fix: Update To: when From: is set to a smaller value
   - [x] Make it so, when To: and From: are the same, they output "2023" instead of "2023 - 2023"
   - [x] Make it so empty To: date outputs something like "2023 - Current"
+  - [_] Look at (idea) and see if we should add more datapoints
   - [_] Reset whole form
   - [_] Reset section? (debatable)
   - [_] Download as pdf
@@ -69,6 +68,7 @@
   - [_] Add photo
   - [_] Dark/light mode
   - [_] Lazy load sections of the page and add loading icon (only if loading times become an issue)
+  - [_] Lazy load icons to minimize bundle size
   - [_] Save any résumé to localStorage with a name
   - [_] Save latest version in localStorage anonymously if not named, and load it if it exists
   - [_] Localization json file (language). Use user default, or last selected from localStorage
