@@ -45,7 +45,7 @@
   - [x] Put To/From inputs side by side with a container or smn
   - [_] Look at (idea) and see if we should add more datapoints
   - [_] Tweak dark mode colors
-  - [_] Remove unused dependencies and add mdi icons
+  - [x] Remove unused dependencies and add mdi icons
   - [_] Icons
     - [_] Use mdi icons in add/delete buttons
     - [_] Add mdi icons to output

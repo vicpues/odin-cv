@@ -21,6 +21,8 @@
     "postdist": "yarn clean && git reset HEAD^"
   },
   "dependencies": {
+    "@mdi/js": "^7.4.47",
+    "@mdi/react": "^1.6.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
