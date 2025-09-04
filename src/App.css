@@ -10,11 +10,31 @@ body {
   --nav-height: 3.5rem;
 }
 
-main {
+#editor {
   display: grid;
   grid-template-rows: calc(100vh - var(--nav-height));
   grid-template-columns: min(50vw, 40rem) 1fr;
   padding-top: var(--nav-height);
+}
+
+@media screen and (max-width: 600px) {
+  #editor {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-color: var(--border-muted) var(--bg-dark);
+
+    > * {
+      min-width: 100vw;
+      scroll-snap-align: start;
+    }
+
+    #output-container {
+      --page-width: 95cqw;
+    }
+  }
 }
 
 /* GENERAL */
