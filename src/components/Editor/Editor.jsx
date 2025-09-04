@@ -1,3 +1,4 @@
+import ViewButton from "./ViewButton/ViewButton";
 import { useState } from "react";
 
 export default function Editor({ children }) {
@@ -26,6 +27,7 @@ export default function Editor({ children }) {
   return (
     <main id="editor" onScroll={swipeHandler}>
       {children}
+      {view !== PARALLEL && <ViewButton view={view} />}
     </main>
   );
 }

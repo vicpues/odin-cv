@@ -1,0 +1,20 @@
+#view-button {
+  --size: 3.5rem;
+  position: absolute;
+  right: var(--margin-s);
+  bottom: var(--margin-s);
+
+  transition: all 0.5s;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--primary);
+  padding: var(--margin-xs);
+  width: var(--size);
+  height: var(--size);
+  color: var(--text-white);
+
+  &.preview {
+    right: calc(-1 * calc(var(--margin-m) + var(--size)));
+    transform: rotate(180deg);
+  }
+}
