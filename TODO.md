@@ -83,7 +83,6 @@
   - [_] Test keyboard interaction
 
 - [_] Final touches:
-  - [_] Set vite targeted version and add plugins to check for unsupported features (eslint / stylelint)
   - [_] Give app a catchy name
   - [_] Links to source files/github
   - [_] Favicon
