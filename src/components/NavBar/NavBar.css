@@ -15,8 +15,20 @@ nav {
   color: var(--text-white);
 
   #app-title {
-    font: var(--h1);
-    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: var(--margin-s);
+
+    .app-logo {
+      --size: var(--margin-xl);
+      width: var(--size);
+      height: var(--size);
+    }
+
+    #app-name {
+      font: var(--h1);
+      letter-spacing: 0.05em;
+    }
   }
 
   #nav-links-container {
