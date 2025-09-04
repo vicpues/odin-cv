@@ -84,7 +84,7 @@
 
 - [_] Final touches:
   - [x] Give app a catchy name
-  - [_] Links to source files/github
+  - [x] Links to source files/github
   - [_] Favicon
   - [_] Set up publish toolchain
   - [_] Deploy!

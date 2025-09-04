@@ -4,6 +4,7 @@ nav {
   top: 0;
   right: 0;
   left: 0;
+  justify-content: space-between;
   align-items: center;
   z-index: 1;
 
@@ -16,6 +17,32 @@ nav {
   #app-title {
     font: var(--h1);
     letter-spacing: 0.05em;
+  }
+
+  #nav-links-container {
+    display: flex;
+    gap: var(--margin-xs);
+
+    .nav-link {
+      display: inline-block;
+      transition: all 0.1s;
+      border: none;
+      border-radius: 50%;
+      background-color: var(--primary);
+      padding: var(--margin-xs);
+
+      &:hover,
+      &:focus {
+        background-color: var(--border);
+      }
+
+      .nav-link-icon {
+        --size: var(--margin-xl);
+        width: var(--size);
+        height: var(--size);
+        color: var(--text-white);
+      }
+    }
   }
 }
 

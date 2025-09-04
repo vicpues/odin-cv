@@ -7,7 +7,7 @@
 ## Assets
 
 - [Open Sans font](https://fonts.google.com/specimen/Open+Sans) by Steve Matteson. Via Google Fonts.
-- [Plus icon](https://pictogrammers.com/library/mdi/icon/plus/), [Close icon](https://pictogrammers.com/library/mdi/icon/close/), [Email Icon](https://pictogrammers.com/library/mdi/icon/email-outline/), [Phone Icon](https://pictogrammers.com/library/mdi/icon/phone-outline/), [Map Marker Icon](https://pictogrammers.com/library/mdi/icon/map-marker-outline/), [Menu Right Icon](https://pictogrammers.com/library/mdi/icon/menu-right/) from Google Material Design Icons. Via npm.
+- [Plus icon](https://pictogrammers.com/library/mdi/icon/plus/), [Close icon](https://pictogrammers.com/library/mdi/icon/close/), [Email Icon](https://pictogrammers.com/library/mdi/icon/email-outline/), [Phone Icon](https://pictogrammers.com/library/mdi/icon/phone-outline/), [Map Marker Icon](https://pictogrammers.com/library/mdi/icon/map-marker-outline/), [Menu Right Icon](https://pictogrammers.com/library/mdi/icon/menu-right/), [Github Logo](https://pictogrammers.com/library/mdi/icon/github/), from Google Material Design Icons. Via npm.
 
 ## Tools
 
