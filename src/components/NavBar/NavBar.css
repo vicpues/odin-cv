@@ -5,6 +5,7 @@ nav {
   right: 0;
   left: 0;
   align-items: center;
+  z-index: 1;
 
   box-shadow: var(--double-shadow);
   background-color: var(--primary);

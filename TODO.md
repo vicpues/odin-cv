@@ -51,7 +51,7 @@
     - [x] Preprocess email address to include soft breaks
     - [x] See if icons would look good anywhere else (though it looks pretty good as is)
   - [_] Make that sucker responsive
-    - [_] Tablet (>1000px)
+    - [x] Tablet (>1000px)
     - [_] Mobile (>550px)
 
 - [_] Optional features (put extra ideas in here)
