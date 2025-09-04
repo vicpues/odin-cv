@@ -17,17 +17,26 @@ export default function Editor({ children }) {
     return window.innerWidth <= MOBILE_BREAKPOINT;
   }
 
-  function swipeHandler(e) {
+  function updateView(e) {
     const editor = e.target;
     const midpoint = editor.offsetWidth / 2;
     const currentOffset = editor.scrollLeft;
     setView(currentOffset < midpoint ? EDIT : PREVIEW);
   }
 
+  function switchView() {
+    const editor = document.querySelector("#editor");
+    if (view === EDIT) {
+      editor.scrollTo({ top: 0, left: editor.offsetWidth, behavior: "smooth" });
+    } else {
+      editor.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }
+  }
+
   return (
-    <main id="editor" onScroll={swipeHandler}>
+    <main id="editor" onScroll={updateView}>
       {children}
-      {view !== PARALLEL && <ViewButton view={view} />}
+      {view !== PARALLEL && <ViewButton view={view} onClick={switchView} />}
     </main>
   );
 }

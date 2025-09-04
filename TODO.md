@@ -50,9 +50,9 @@
     - [x] Add mdi icons to output
     - [x] Preprocess email address to include soft breaks
     - [x] See if icons would look good anywhere else (though it looks pretty good as is)
-  - [_] Make that sucker responsive
+  - [x] Make that sucker responsive
     - [x] Tablet (>1000px)
-    - [_] Mobile (>550px)
+    - [x] Mobile (>550px)
 
 - [_] Optional features (put extra ideas in here)
   - [_] Improve dark mode toggle logic
