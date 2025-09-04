@@ -3,6 +3,7 @@ import { useState } from "react";
 import Form from "./components/Form/Form";
 import Output from "./components/Output/Output";
 import NavBar from "./components/NavBar/NavBar";
+import Editor from "./components/Editor/Editor";
 import { data } from "./form-data";
 
 export default function App() {
@@ -15,10 +16,10 @@ export default function App() {
   return (
     <>
       <NavBar />
-      <main>
+      <Editor>
         <Form data={formData} updateFn={updateFn} />
         <Output data={formData} />
-      </main>
+      </Editor>
     </>
   );
 }
