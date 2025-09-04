@@ -18,3 +18,9 @@ nav {
     letter-spacing: 0.05em;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .app-descriptor {
+    display: none;
+  }
+}

@@ -1,4 +1,4 @@
-# Make-a-résumé App
+# Résumez App
 
 A web app to create and edit your own résumé.
 
