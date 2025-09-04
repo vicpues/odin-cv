@@ -74,6 +74,12 @@
   - [_] Save latest version in localStorage anonymously if not named, and load it if it exists
   - [_] Localization json file (language). Use user default, or last selected from localStorage
 
+- [_] A11y
+  - [_] Test for 200% zoom on desktop, tablet & mobile
+  - [_] Set output element aria-live assertiveness to polite
+  - [_] Add alternatives for prefers-reduced-motion
+  - [_] Test keyboard interaction
+
 - [_] Final touches:
   - [_] Set vite targeted version and add plugins to check for unsupported features (eslint / stylelint)
   - [_] Give app a catchy name
