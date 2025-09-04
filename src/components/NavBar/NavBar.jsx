@@ -1,4 +1,4 @@
-import Icon from "@mdi/react";
+import NavLink from "./NavLink/NavLink";
 import { mdiGithub } from "@mdi/js";
 import "./NavBar.css";
 
@@ -10,14 +10,11 @@ export default function NavBar() {
       </h1>
 
       <div id="nav-links-container">
-        <a
+        <NavLink
           title="Source code on Github"
           href="https://github.com/vicpues/odin-cv"
-          target="_blank"
-          className="nav-link"
-        >
-          <Icon path={mdiGithub} className="nav-link-icon" />
-        </a>
+          svgPath={mdiGithub}
+        />
       </div>
     </nav>
   );

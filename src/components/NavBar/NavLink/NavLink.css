@@ -1,0 +1,20 @@
+.nav-link {
+  display: inline-block;
+  transition: all 0.1s;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--primary);
+  padding: var(--margin-xs);
+
+  &:hover,
+  &:focus {
+    background-color: var(--border);
+  }
+
+  .nav-link-icon {
+    --size: var(--margin-xl);
+    width: var(--size);
+    height: var(--size);
+    color: var(--text-white);
+  }
+}
