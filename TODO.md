@@ -93,6 +93,7 @@
 
   - [_] README
     - [_] Intro with description and links
+    - [_] Link live view
     - [_] Cool screenshot ^\_^
     - [_] How to use
     - [_] After-action report
