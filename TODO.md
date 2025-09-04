@@ -85,7 +85,7 @@
 - [_] Final touches:
   - [x] Give app a catchy name
   - [x] Links to source files/github
-  - [_] Favicon
+  - [x] Favicon
   - [_] Set up publish toolchain
   - [_] Deploy!
   - [_] Make sure CREDITS.md is correct
