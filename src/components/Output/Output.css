@@ -8,7 +8,7 @@
 
 #output-container {
   --min-aspect-ratio: 1.414; /* A4 Paper size */
-  --page-width: min(46vw, 50rem);
+  --page-width: min(46cqw, 50rem);
   --rem: calc(0.018 * var(--page-width));
   display: flex;
   justify-self: center;
