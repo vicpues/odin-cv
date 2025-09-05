@@ -18,7 +18,7 @@ export const data = {
             degree: "BA in Scare Management",
             from: "2018",
             to: "2022",
-            details: "-Scares 101\n-Advanced sneaking",
+            details: "-Scares 101\n-If you're reading this, the test worked",
         },
     ],
 
