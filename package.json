@@ -9,16 +9,12 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "dist": "yarn predist ; git add -f dist && git commit dist -m \"Release\" && git subtree push --prefix dist origin gh-pages ; yarn postdist",
     "fmt": "yarn prettier ; yarn postcss",
     "lint": "yarn eslint ; yarn stylelint",
     "eslint": "eslint . --cache --cache-location ./.yarn/.cache/.eslintcache",
     "stylelint": "stylelint \"./src/**/*.css\" --cache --cache-location ./.yarn/.cache/.stylelintcache",
     "prettier": "prettier . --write --ignore-path .gitignore --cache --cache-location ./.yarn/.cache/.prettiercache | grep -v \"unchanged\"",
-    "postcss": "postcss ./src/**/*.css --replace",
-    "clean": "git rm -r --cached dist",
-    "predist": "git push origin --delete gh-pages ; yarn build",
-    "postdist": "yarn clean && git reset HEAD^"
+    "postcss": "postcss ./src/**/*.css --replace"
   },
   "dependencies": {
     "@mdi/js": "^7.4.47",
