@@ -57,12 +57,6 @@
 - [_] Optional features (put extra ideas in here)
   - [_] Improve dark mode toggle logic
   - [_] Drag n' drop to change the order of Input Groups
-  - [x] Fix: make To: date input min="" equal to From: (a.k.a: make it so you can't have nonsensical dates such as 2025-2018)
-  - [x] Fix: Disable To: input unless From: has been set (so you can't have something like "(empty)- 2025")
-  - [x] Fix: When first interacting with "From", insert the current year instead of 1900
-  - [x] Fix: Update To: when From: is set to a smaller value
-  - [x] Make it so, when To: and From: are the same, they output "2023" instead of "2023 - 2023"
-  - [x] Make it so empty To: date outputs something like "2023 - Current"
   - [_] Look at (idea) and see if we should add more datapoints
   - [_] Reset whole form
   - [_] Reset section? (debatable)
@@ -89,7 +83,7 @@
   - [x] Rename repo / package (this might require renaming through github, re-cloning, reinstalling with yarn, and then "yarn rename")
   - [x] Set up publish toolchain
   - [x] Deploy!
-  - [_] Make sure CREDITS.md is correct
+  - [x] Make sure CREDITS.md is correct
   - [x] Github description
 
   - [_] README
@@ -102,3 +96,11 @@
     - [_] Technologies used
     - [_] Contributing
     - [_] License
+
+- Issues:
+  - [x] Fix: make To: date input min="" equal to From: (a.k.a: make it so you can't have nonsensical dates such as 2025-2018)
+  - [x] Fix: Disable To: input unless From: has been set (so you can't have something like "(empty)- 2025")
+  - [x] Fix: When first interacting with "From", insert the current year instead of 1900
+  - [x] Fix: Update To: when From: is set to a smaller value
+  - [x] Make it so, when To: and From: are the same, they output "2023" instead of "2023 - 2023"
+  - [x] Make it so empty To: date outputs something like "2023 - Current"
