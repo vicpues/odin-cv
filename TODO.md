@@ -86,7 +86,7 @@
   - [x] Make sure CREDITS.md is correct
   - [x] Github description
 
-  - [_] README
+  - [x] README
     - [x] Intro with description and links
     - [x] Link live view
     - [x] Cool screenshot ^\_^
@@ -95,7 +95,7 @@
       - [x] Mention that I used my own template to get going
     - [x] Technologies used
     - [x] Contributing
-    - [_] License
+    - [x] License
 
 - Issues:
   - [x] Fix: make To: date input min="" equal to From: (a.k.a: make it so you can't have nonsensical dates such as 2025-2018)
