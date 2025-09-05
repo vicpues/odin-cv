@@ -87,9 +87,9 @@
   - [x] Github description
 
   - [_] README
-    - [_] Intro with description and links
+    - [x] Intro with description and links
     - [x] Link live view
-    - [_] Cool screenshot ^\_^
+    - [x] Cool screenshot ^\_^
     - [_] How to use
     - [_] After-action report
       - [_] Mention that I used my own template to get going
