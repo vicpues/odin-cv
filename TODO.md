@@ -93,7 +93,7 @@
     - [x] How to use
     - [x] After-action report
       - [x] Mention that I used my own template to get going
-    - [_] Technologies used
+    - [x] Technologies used
     - [_] Contributing
     - [_] License
 
