@@ -13,6 +13,11 @@
   height: var(--size);
   color: var(--text-white);
 
+  &:active {
+    transform: scale(0.9);
+    filter: brightness(0.8);
+  }
+
   &.preview {
     right: calc(-1 * calc(var(--margin-m) + var(--size)));
     transform: rotate(180deg);
