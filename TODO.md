@@ -88,13 +88,13 @@
   - [x] Favicon
   - [x] Rename repo / package (this might require renaming through github, re-cloning, reinstalling with yarn, and then "yarn rename")
   - [_] Set up publish toolchain
-  - [_] Deploy!
+  - [x] Deploy!
   - [_] Make sure CREDITS.md is correct
   - [_] Github description
 
   - [_] README
     - [_] Intro with description and links
-    - [_] Link live view
+    - [x] Link live view
     - [_] Cool screenshot ^\_^
     - [_] How to use
     - [_] After-action report
