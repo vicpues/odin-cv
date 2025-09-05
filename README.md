@@ -68,3 +68,37 @@ To cap this devlog off, I wanna say that this was a fun project to work on! I'd 
 - Git
 - Github
 - Husky (for pre-commit hooks)
+
+## Contributing
+
+If you wanna contribute to this, you rock.
+
+### Installation
+
+The only required software is Yarn. Just clone the project and run this in the project directory to install the dependencies and configure the sdks + precommit hooks:
+
+```bash
+yarn ; yarn setup
+```
+
+If it complains about esbuild or something, just run it again.
+
+### Scripts
+
+The package.json scripts are pretty self explanatory. If it's not listed here, it's a helper script and there's no reason to run it:
+
+- `yarn setup`: Sets up husky and the editor after the dependencies have been installed. Only needed when you clone the project.
+- `yarn fmt`: Runs prettier on the source files (see precommit hook below).
+- `yarn lint`: Finds problems in the source files with eslint and stylelint.
+- `yarn dev`: Spins up a vite development server.
+- `yarn build`: Builds the project locally in `./dist`. Since the app is deployed automatically when `origin/main` updates, this is only necessary if you wanna test the performance of the app locally with `yarn preview`.
+
+### Commits
+
+I use the [conventional commits guidelines](https://www.conventionalcommits.org/en/v1.0.0/) for commit messages. The commits are not auto-linted, I trust you to follow them. Additional info is optional. Just remember to `yarn lint` before you merge.
+
+There's a precommit hook that automatically formats your code when you commit. It remembers the files you've added to git, formats all the source files, and then commits _only_ the files that were already staged to git. This is so you can add individual files in each commit. This can break git in some cases, such commits that delete/rename files. If git starts acting out, you can bypass this behaviour with:
+
+```bash
+yarn fmt ; git add . ; git commit --no-verify
+```

@@ -94,7 +94,7 @@
     - [x] After-action report
       - [x] Mention that I used my own template to get going
     - [x] Technologies used
-    - [_] Contributing
+    - [x] Contributing
     - [_] License
 
 - Issues:
