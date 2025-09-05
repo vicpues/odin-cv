@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "setup": "yarn ; yarn sdks vscode ; husky",
+    "setup": "yarn ; yarn sdks vscode ; husky ; netlify init",
     "rename": "node -e \"const fs=require('fs'),path=require('path');const pkgPath=path.join(process.cwd(),'package.json');const lockPath=path.join(process.cwd(),'yarn.lock');const oldPkg=JSON.parse(fs.readFileSync(pkgPath));const oldName=oldPkg.name;const newName=path.basename(process.cwd());oldPkg.name=newName;fs.writeFileSync(pkgPath,JSON.stringify(oldPkg,null,2)+'\\n');if(fs.existsSync(lockPath)){let lock=fs.readFileSync(lockPath,'utf8');lock=lock.replace(new RegExp(oldName+'@workspace:\\.','g'),newName+'@workspace:.');fs.writeFileSync(lockPath,lock);}console.log('✅ Renamed to',newName);\"",
     "dev": "vite",
     "build": "vite build",
@@ -40,6 +40,7 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
     "husky": "^9.1.7",
+    "netlify-cli": "^23.5.0",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "prettier": "^3.6.2",
