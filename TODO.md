@@ -90,7 +90,7 @@
     - [x] Intro with description and links
     - [x] Link live view
     - [x] Cool screenshot ^\_^
-    - [_] How to use
+    - [x] How to use
     - [_] After-action report
       - [_] Mention that I used my own template to get going
     - [_] Technologies used
