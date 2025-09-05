@@ -91,8 +91,8 @@
     - [x] Link live view
     - [x] Cool screenshot ^\_^
     - [x] How to use
-    - [_] After-action report
-      - [_] Mention that I used my own template to get going
+    - [x] After-action report
+      - [x] Mention that I used my own template to get going
     - [_] Technologies used
     - [_] Contributing
     - [_] License
