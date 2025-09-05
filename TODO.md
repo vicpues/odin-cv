@@ -86,7 +86,7 @@
   - [x] Give app a catchy name
   - [x] Links to source files/github
   - [x] Favicon
-  - [_] Rename repo / package (this might require renaming through github, re-cloning, reinstalling with yarn, and then "yarn rename")
+  - [x] Rename repo / package (this might require renaming through github, re-cloning, reinstalling with yarn, and then "yarn rename")
   - [_] Set up publish toolchain
   - [_] Deploy!
   - [_] Make sure CREDITS.md is correct
